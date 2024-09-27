@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        input {
+            margin: 1.5em;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        button {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        function printSum() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            var resultNode = document.getElementsByTagName('h1')[0];
+            resultNode.textContent = (num1 + num2).toString();
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="number" id="num1">
+    </div>
+    <div>
+        +
+    </div>
+    <div>
+        <input type="number" id="num2">
+    </div>
+    <div>
+        =
+    </div>
+    <div>
+        <h1>0</h1>
+    </div>
+    <div>
+        <button onclick="printSum()">Calculate</button>
+    </div>
+</body>
+
+</html>
