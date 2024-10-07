@@ -2,18 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasutsu</title>
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Mobile Styles */
+		div.six {
+			width: 600px;
+			border: 1px solid black;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			background-color: aquamarine;
+		}
+
+		div.thousand {
+			width: 1024px;
+			border: 1px solid black;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			background-color: #edd5a0;
+		}
+
+		div.fourinch {
+			width: 4in;
+			border: 1px solid black;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			background-color: aquamarine;
+		}
+
+		div.eightinch {
+			width: 8.5in;
+			border: 1px solid black;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			background-color: #edd5a0;
+		}
+
+		div.text {
+			font-size: 1em;
+		}
+		
+		/* Tablet Styles */
+		@media screen and (min-width: 600px) {
+			div.text {
+				font-size: 1.6em;
+				border-bottom: 8px solid rgb(175, 173, 183);
+			}
+		}
+
+		@media screen and (min-width: 4in) {
+			div.text2 {
+				font-size: 1.6em;
+				border-bottom: 8px solid rgb(175, 173, 183);
+			}
+		}
+		
+		/* Desktop Styles */
+		@media screen and (min-width: 1024px) {
+			div.text {
+				font-size: 3em;
+				background-color: #c6dd73;
+			}
+		}
+
+		@media screen and (min-width: 8.5in) {
+			div.text2 {
+				font-size: 3em;
+				background-color: #c6dd73;
+			}
+		}
+	</style>
 </head>
 
-<body>
-    <h1>Hi, there</h1>
+<body style="font-size: 16px;">
+	<div class="six">600 px</div>
+	<div class="thousand">1024 px</div>
+	<div class="text">
+		Sample text for px test
+	</div>
+
+	<div class="fourinch">4 in</div>
+	<div class="eightinch">8.5 in</div>
+	<div class="text2">
+		Sample text for in test
+	</div>
 </body>
 
 </html>
