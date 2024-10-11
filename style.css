@@ -1,4 +1,5 @@
-/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,63 +7,33 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.5;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(2, 2, 45);
+    padding: 0 5vw;
 }
 
-/* Header */
 header {
     text-align: center;
-    margin-bottom: 2rem;
+    padding: 10vh 0;
 }
 
-h1 {
-    font-size: 1.8rem; /* Starting font-size for mobile */
+header h1 {
+    color: white;
+    font-size: 10vw;
 }
 
-nav {
-    margin-top: 1rem;
+.pages {
+    margin-top: 5vh;
 }
 
-nav a {
-    font-size: 1rem;
-    margin: 0 1rem;
+.pages div {
+    margin-bottom: 3vh;
+}
+
+.pages a {
     text-decoration: none;
-    color: #007bff;
-}
-
-/* Section Layout */
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1rem;
-}
-
-/* Projects section */
-.project {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-}
-
-/* Contact section */
-#contact {
-    text-align: center;
-}
-
-/* Making sure everything adjusts well to small screens */
-header, section {
-    width: 100%;
+    color: white;
+    font-size: 5vw;
+    padding: 2vh 0;
+    display: block;
 }
