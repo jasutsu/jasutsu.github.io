@@ -8,6 +8,7 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+		/* Defaults */
 		* {
 			margin: 0;
 			padding: 0;
@@ -21,16 +22,41 @@
 			color: white;
 		}
 
+		/* Header with links */
 		header {
 			text-align: center;
-			padding: 8vh 0;
+			padding-top: 8vh;
 			margin-left: -5vw;
 			margin-right: -5vw;
 			background-color: rgb(11, 11, 128);
 		}
 
-		.text-logo {
+		header .text-logo {
 			font-size: 8vw;
+		}
+
+		/* Sticky Header */
+		#sticky-header {
+			position: sticky;
+			top: 0;
+			z-index: 100;
+		}
+
+		#sticky-header h1 {
+			font-size: 4.5vw;
+			background-color: rgb(11, 11, 128);
+			padding: 2vh 0;
+			margin-left: -5vw;
+			margin-right: -5vw;
+			text-align: center;
+			color: rgba(255, 255, 255, 0.0);
+			cursor: default;
+			transition: color 0.2s ease;
+		}
+
+		#sticky-header .show {
+			color: rgba(255, 255, 255, 1.0);
+			cursor: pointer;
 		}
 
 		.pages {
@@ -38,7 +64,7 @@
 		}
 
 		.pages div {
-			margin-bottom: 2vh;
+			margin-top: 2vh;
 		}
 
 		.pages a {
@@ -49,9 +75,10 @@
 			color: white;
 		}
 
+		/* First Section */
 		.text-declaration {
-			font-size: 6vw;
-			padding: 8vh 4vw;
+			font-size: 5vw;
+			padding: 6vh 4vw;
 		}
 
 		.purple {
@@ -59,37 +86,39 @@
 			font-size: 1.2em;
 		}
 
-		#typedElement {
-			color: rgb(182, 43, 182);
-			color: rgb(182, 43, 182);
-		}
-
 		.buttons {
-			/* background-color: red; */
-			margin-top: 6vh;
-			padding: 2vh 4vw;
+			margin-top: 4vh;
+			padding: 2vh 0;
 			display: flex;
 			justify-content: space-between;
 		}
 
 		.btn {
 			font-size: 4vw;
-			width: 32vw;
+			width: 40vw;
 			padding: 2vh 2vw;
+			margin: 1vh 1vw;
 			border-radius: 1vw;
 			background-color: rgb(2 2 45);
 			color: white;
 			border: 2px solid white;
 		}
 
+		.btn:active {
+			background-color: rgb(182, 43, 182);
+			border-color: rgb(182, 43, 182);
+		}
+
 		.dev-image img {
 			width: 100%;
 		}
+
+		/* Second Section */
 	</style>
 </head>
 
 <body>
-	<header>
+	<header id="main-header">
 		<h1 class="text-logo">Jacob's Portfolio</h1>
 		<div class="pages">
 			<div><a href="">Home</a></div>
@@ -98,6 +127,9 @@
 			<div><a href="">Contact Me</a></div>
 		</div>
 	</header>
+	<div id="sticky-header">
+		<h1 class="">Jacob's Portfolio</h1>
+	</div>
 
 	<main>
 		<section class="firstSection">
@@ -107,19 +139,43 @@
 			<div class="text-declaration">
 				Hello my name is <span class="purple">Jacob</span>
 				<div>and I am a passionate</div>
-				<span id="typedElement"></span>
+				<span id="typedElement" class="purple"></span>
 				<div class="buttons">
-					<button class="btn">Download Resume</button>
+					<button class="btn">Download<br />Resume</button>
 					<button class="btn">Visit GitHub</button>
 				</div>
 			</div>
 			<div class="dev-image">
-				<img src="dev.png" alt="dev.png">
+				<img src="../dev.png" alt="dev.png">
 			</div>
 		</section>
 
 		<section class="secondSection">
-			<!-- work Experience -->
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
+			workexperience<br />
 		</section>
 	</main>
 
@@ -132,6 +188,37 @@
 			typeSpeed: 50,
 			loop: false,
 		});
+	</script>
+	<script>
+		var allowScrollToTop = false;
+
+		window.addEventListener('scroll', function () {
+			const mainHeader = document.getElementById('main-header');
+			const stickyHeader = document.querySelector('#sticky-header h1');
+			const mainHeaderHeight = mainHeader.offsetHeight;
+
+			console.log(mainHeaderHeight, window.scrollY);
+
+			if (window.scrollY > mainHeaderHeight) {
+				// stickyHeader.style.color = 'rgba(255, 255, 255, 1.0)';
+				stickyHeader.classList.add('show');
+				allowScrollToTop = true;
+			} else {
+				// stickyHeader.style.color = 'rgba(255, 255, 255, 0.0)';
+				stickyHeader.classList.remove('show');
+				allowScrollToTop = false;
+			}
+		});
+
+		document.getElementById('sticky-header')
+			.addEventListener('click', function () {
+				if (allowScrollToTop) {
+					window.scrollTo({
+						top: 0,
+						behaviour: 'smooth'
+					});
+				}
+			});
 	</script>
 </body>
 
