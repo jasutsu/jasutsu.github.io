@@ -114,6 +114,107 @@
 		}
 
 		/* Second Section */
+		.secondSection {
+			margin-top: 6vh;
+			margin-bottom: 6vh;
+		}
+
+		.secondSection .title {
+			margin-left: 4vw;
+			margin-right: 4vw;
+		}
+
+		.text-gray {
+			color: gray;
+			font-size: 4vw;
+		}
+
+		.secondSection h1 {
+			font-size: 8vw;
+		}
+
+		.vertical-line {
+			width: 1px;
+			background-color: white;
+			height: 100vh;
+			margin-left: 16vw;
+			margin-top: 6vh;
+			padding-top: 8vh;
+		}
+
+		.vertical-line .horizontal-line {
+			width: 60vw;
+			background-color: white;
+			height: 1px;
+			margin-bottom: 24vh;
+		}
+
+		/* ISSUE: items inside horizontal-line
+are missaligned on different screens
+*/
+		.secondSection img {
+			width: 10vw;
+			position: relative;
+			top: -2.5vh;
+			right: 13vw;
+		}
+
+		.secondSection .work-title {
+			position: relative;
+			top: -10.5vh;
+			right: -6vw;
+			font-size: 4vw;
+			width: 68vw;
+		}
+
+		.secondSection .work-desc {
+			position: relative;
+			top: -9.5vh;
+			right: -6vw;
+			font-size: 3.5vw;
+			width: 64vw;
+			color: gray;
+		}
+
+		footer {
+			margin-left: -5vw;
+			margin-right: -5vw;
+			background-color: rgb(11, 11, 128);
+			text-align: center;
+			padding: 4vh 0;
+		}
+
+		footer .footer-title {
+			font-size: 4vw;
+		}
+
+		footer .footer {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.footer-section {
+			width: 20vw;
+		}
+
+		.footer-section li {
+			list-style: none;
+			font-size: 0.9em;
+		}
+
+		footer .footer-rights {
+			font-size: 3vw;
+			padding-top: 4vh;
+			text-align: center;
+			color: gray;
+		}
+
+		hr {
+			border: 0;
+			height: 1px;
+			background: rgb(146, 60, 226);
+			margin: 8vh 1vw;
+		}
 	</style>
 </head>
 
@@ -133,9 +234,6 @@
 
 	<main>
 		<section class="firstSection">
-			<!-- hello my name is ... -->
-			<!-- buttons -->
-			<!-- dev image -->
 			<div class="text-declaration">
 				Hello my name is <span class="purple">Jacob</span>
 				<div>and I am a passionate</div>
@@ -149,35 +247,91 @@
 				<img src="../dev.png" alt="dev.png">
 			</div>
 		</section>
-
+		<hr />
 		<section class="secondSection">
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
-			workexperience<br />
+			<div class="title">
+				<div class="text-gray">What I have done so far?</div>
+				<h1>Work Experience</h1>
+			</div>
+
+			<div class="vertical-line">
+				<div class="horizontal-line">
+					<img src="../html.png" alt="html.png">
+					<div class="work-title">
+						HTML Developer (2014-2017)
+					</div>
+					<div class="work-desc">
+						Lorem ipsum dolor, sit amet consectetur
+						adipisicing elit. Quidem nesciunt amet
+						porro dolor quam temporibus eos inventore
+						laboriosam est eum?
+					</div>
+				</div>
+				<div class="horizontal-line">
+					<img src="../whatsapp.png" alt="whatsapp.png">
+					<div class="work-title">
+						Whatsapp Developer (2017-2018)
+					</div>
+					<div class="work-desc">
+						Lorem ipsum dolor, sit amet consectetur
+						adipisicing elit. Quidem nesciunt amet
+						porro dolor quam temporibus eos inventore
+						laboriosam est eum?
+					</div>
+				</div>
+				<div class="horizontal-line">
+					<img src="../insta.png" alt="insta.png">
+					<div class="work-title">
+						Instagram Developer (2018-2020)
+					</div>
+					<div class="work-desc">
+						Lorem ipsum dolor, sit amet consectetur
+						adipisicing elit. Quidem nesciunt amet
+						porro dolor quam temporibus eos inventore
+						laboriosam est eum?
+					</div>
+				</div>
+				<div class="horizontal-line">
+					<img src="../google.png" alt="google.png">
+					<div class="work-title">
+						Google Developer (2020-preset)
+					</div>
+					<div class="work-desc">
+						Lorem ipsum dolor, sit amet consectetur
+						adipisicing elit. Quidem nesciunt amet
+						porro dolor quam temporibus eos inventore
+						laboriosam est eum?
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer-title footer-section">
+				<h3>Jacob's Developer Portfolio</h3>
+			</div>
+			<div class="footer-section">
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Services</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Services</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-rights">
+			Copright &#169; www.jacobportfolio.com | All rights reserved
+		</div>
+	</footer>
 
 
 	<!-- Typed.js -->
