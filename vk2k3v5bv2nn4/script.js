@@ -110,9 +110,9 @@ function typingHandler() {
 	}, 0);
 	var incorrectCount = charSize - correctCount;
 	var timeSpannedInMinutes = (maxTime - timeLeft) / 60;
-	mistake.innerText = incorrectCount;
-	cpm.innerText = correctCount / timeSpannedInMinutes;
-	wpm.innerText = correctCount / (5 * timeSpannedInMinutes);
+	mistake.innerText = Math.floor(incorrectCount);
+	cpm.innerText = Math.floor(correctCount / timeSpannedInMinutes);
+	wpm.innerText = Math.floor(correctCount / (5 * timeSpannedInMinutes));
 
 	// Reached at the end of para
 	if (charSize === maxCharSize) {
