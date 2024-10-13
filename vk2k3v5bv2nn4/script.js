@@ -128,10 +128,6 @@ function finishGame() {
 }
 
 function scrollToStats() {
-	// stats.scrollIntoView({
-	// 	behavior: 'smooth',
-	// 	block: 'start'
-	// });
 	var rect = stats.getBoundingClientRect();
 	window.scrollTo({
 		top: rect.top + window.scrollY,
