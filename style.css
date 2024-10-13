@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17a2b8;
+    padding: 2vh 2vw;
+}
+
+/* div.out {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+div.in {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #cfdf1a;
+    width: 100%;
+} */
+
+/* Shared Styles */
+.wrapper {
+    background-color: white;
+    border-radius: 2vw;
+    padding: 2vh 4vw;
+    margin-bottom: 6vh;
+    display: flex;
+}
+
+.wrapper .content {
+    border: 1px solid #ccc;
+    border-radius: 2vw;
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .content hr {
+    width: 90%;
+    border: 0;
+    background-color: #ccc;
+    height: 1px;
+}
+
+/* Typing Part */
+.wrapper.text-wrapper {
+    height: 48vh;
+}
+
+.wrapper.text-wrapper .typing-text {
+    height: 25vh;
+    overflow-y: auto;
+}
+
+.wrapper.text-wrapper .typing-text::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapper.text-wrapper .typing-text p {
+    text-align: justify;
+    word-break: break-all;
+    font-size: 4.8vw;
+}
+
+.wrapper.text-wrapper button {
+    border: none;
+    outline: none;
+    background-color: #17a2b8;
+    color: white;
+    font-size: 6vw;
+    border-radius: 1vw;
+    padding: 1vh 18vw;
+    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper.text-wrapper button:active {
+    transform: scale(0.97);
+    background-color: #0c6977;
+}
+
+.wrapper.text-wrapper button:hover {
+    cursor: pointer;
+}
+
+/* Stats Part */
+.wrapper.stats-wrapper {
+    height: 80vh;
+    margin-bottom: 30vh;
+}
+
+.wrapper.stats-wrapper .content {
+    width: 100%;
+}
+
+.wrapper.stats-wrapper .result-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+    width: 100%;
+}
+
+.wrapper.stats-wrapper .result-details li {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.04);
+    border-radius: 2vw;
+    padding: 1vh 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper.stats-wrapper .result-details li p {
+    font-size: 5vw;
+}
+
+.wrapper.stats-wrapper .result-details li span {
+    font-size: 8vw;
+}

@@ -4,376 +4,60 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jacob's Portfolio</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-		/* Defaults */
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: 'Poppins', sans-serif;
-			background-color: rgb(2, 2, 45);
-			padding: 0 5vw;
-			color: white;
-		}
-
-		/* Header with links */
-		header {
-			text-align: center;
-			padding-top: 8vh;
-			margin-left: -5vw;
-			margin-right: -5vw;
-			background-color: rgb(11, 11, 128);
-		}
-
-		header .text-logo {
-			font-size: 8vw;
-		}
-
-		/* Sticky Header */
-		#sticky-header {
-			position: sticky;
-			top: 0;
-			z-index: 100;
-		}
-
-		#sticky-header h1 {
-			font-size: 4.5vw;
-			background-color: rgb(11, 11, 128);
-			padding: 2vh 0;
-			margin-left: -5vw;
-			margin-right: -5vw;
-			text-align: center;
-			color: rgba(255, 255, 255, 0.0);
-			cursor: default;
-			transition: color 0.2s ease;
-		}
-
-		#sticky-header .show {
-			color: rgba(255, 255, 255, 1.0);
-			cursor: pointer;
-		}
-
-		.pages {
-			margin-top: 4vh;
-		}
-
-		.pages div {
-			margin-top: 2vh;
-		}
-
-		.pages a {
-			text-decoration: none;
-			font-size: 4.5vw;
-			padding: 1.5vh 0;
-			display: block;
-			color: white;
-		}
-
-		/* First Section */
-		.text-declaration {
-			font-size: 5vw;
-			padding: 6vh 4vw;
-		}
-
-		.purple {
-			color: rgb(182, 43, 182);
-			font-size: 1.2em;
-		}
-
-		.buttons {
-			margin-top: 4vh;
-			padding: 2vh 0;
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.btn {
-			font-size: 4vw;
-			width: 40vw;
-			padding: 2vh 2vw;
-			margin: 1vh 1vw;
-			border-radius: 1vw;
-			background-color: rgb(2 2 45);
-			color: white;
-			border: 2px solid white;
-		}
-
-		.btn:active {
-			background-color: rgb(182, 43, 182);
-			border-color: rgb(182, 43, 182);
-		}
-
-		.dev-image img {
-			width: 100%;
-		}
-
-		/* Second Section */
-		.secondSection {
-			margin-top: 6vh;
-			margin-bottom: 6vh;
-		}
-
-		.secondSection .title {
-			margin-left: 4vw;
-			margin-right: 4vw;
-		}
-
-		.text-gray {
-			color: gray;
-			font-size: 4vw;
-		}
-
-		.secondSection h1 {
-			font-size: 8vw;
-		}
-
-		.vertical-line {
-			width: 1px;
-			background-color: white;
-			height: 100vh;
-			margin-left: 16vw;
-			margin-top: 6vh;
-			padding-top: 8vh;
-		}
-
-		.vertical-line .horizontal-line {
-			width: 60vw;
-			background-color: white;
-			height: 1px;
-			margin-bottom: 24vh;
-		}
-
-		/* ISSUE: items inside horizontal-line
-are missaligned on different screens
-*/
-		.secondSection img {
-			width: 10vw;
-			position: relative;
-			top: -2.5vh;
-			right: 13vw;
-		}
-
-		.secondSection .work-title {
-			position: relative;
-			top: -10.5vh;
-			right: -6vw;
-			font-size: 4vw;
-			width: 68vw;
-		}
-
-		.secondSection .work-desc {
-			position: relative;
-			top: -9.5vh;
-			right: -6vw;
-			font-size: 3.5vw;
-			width: 64vw;
-			color: gray;
-		}
-
-		footer {
-			margin-left: -5vw;
-			margin-right: -5vw;
-			background-color: rgb(11, 11, 128);
-			text-align: center;
-			padding: 4vh 0;
-		}
-
-		footer .footer-title {
-			font-size: 4vw;
-		}
-
-		footer .footer {
-			display: flex;
-			justify-content: space-evenly;
-		}
-
-		.footer-section {
-			width: 20vw;
-		}
-
-		.footer-section li {
-			list-style: none;
-			font-size: 0.9em;
-		}
-
-		footer .footer-rights {
-			font-size: 3vw;
-			padding-top: 4vh;
-			text-align: center;
-			color: gray;
-		}
-
-		hr {
-			border: 0;
-			height: 1px;
-			background: rgb(146, 60, 226);
-			margin: 8vh 1vw;
-		}
-	</style>
+	<title>Typing Master for Mobile</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header id="main-header">
-		<h1 class="text-logo">Jacob's Portfolio</h1>
-		<div class="pages">
-			<div><a href="">Home</a></div>
-			<div><a href="">About</a></div>
-			<div><a href="">Projects</a></div>
-			<div><a href="">Contact Me</a></div>
+	<!-- <div class="out">
+		<div class="in"></div>
+		<div class="in"></div>
+		<div class="in"></div>
+		<div class="in"></div>
+	</div> -->
+
+	<div class="wrapper text-wrapper">
+		<!-- <input type="text" class="input-field"> -->
+		<div class="content">
+			<div class="typing-text">
+				<p>
+					The human brain is one of the most complex structures in the known universe. With billions of
+					neurons and trillions of connections, it can process information at incredible speeds, making
+					decisions and solving problems in milliseconds. Yet, much about the brain remains a mystery to
+					neuroscientists, who continue to uncover new insights into how it functions.
+				</p>
+			</div>
+			<hr>
+			<button>Try Again</button>
 		</div>
-	</header>
-	<div id="sticky-header">
-		<h1 class="">Jacob's Portfolio</h1>
 	</div>
 
-	<main>
-		<section class="firstSection">
-			<div class="text-declaration">
-				Hello my name is <span class="purple">Jacob</span>
-				<div>and I am a passionate</div>
-				<span id="typedElement" class="purple"></span>
-				<div class="buttons">
-					<button class="btn">Download<br />Resume</button>
-					<button class="btn">Visit GitHub</button>
-				</div>
-			</div>
-			<div class="dev-image">
-				<img src="../dev.png" alt="dev.png">
-			</div>
-		</section>
-		<hr />
-		<section class="secondSection">
-			<div class="title">
-				<div class="text-gray">What I have done so far?</div>
-				<h1>Work Experience</h1>
-			</div>
-
-			<div class="vertical-line">
-				<div class="horizontal-line">
-					<img src="../html.png" alt="html.png">
-					<div class="work-title">
-						HTML Developer (2014-2017)
-					</div>
-					<div class="work-desc">
-						Lorem ipsum dolor, sit amet consectetur
-						adipisicing elit. Quidem nesciunt amet
-						porro dolor quam temporibus eos inventore
-						laboriosam est eum?
-					</div>
-				</div>
-				<div class="horizontal-line">
-					<img src="../whatsapp.png" alt="whatsapp.png">
-					<div class="work-title">
-						Whatsapp Developer (2017-2018)
-					</div>
-					<div class="work-desc">
-						Lorem ipsum dolor, sit amet consectetur
-						adipisicing elit. Quidem nesciunt amet
-						porro dolor quam temporibus eos inventore
-						laboriosam est eum?
-					</div>
-				</div>
-				<div class="horizontal-line">
-					<img src="../insta.png" alt="insta.png">
-					<div class="work-title">
-						Instagram Developer (2018-2020)
-					</div>
-					<div class="work-desc">
-						Lorem ipsum dolor, sit amet consectetur
-						adipisicing elit. Quidem nesciunt amet
-						porro dolor quam temporibus eos inventore
-						laboriosam est eum?
-					</div>
-				</div>
-				<div class="horizontal-line">
-					<img src="../google.png" alt="google.png">
-					<div class="work-title">
-						Google Developer (2020-preset)
-					</div>
-					<div class="work-desc">
-						Lorem ipsum dolor, sit amet consectetur
-						adipisicing elit. Quidem nesciunt amet
-						porro dolor quam temporibus eos inventore
-						laboriosam est eum?
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="footer">
-			<div class="footer-title footer-section">
-				<h3>Jacob's Developer Portfolio</h3>
-			</div>
-			<div class="footer-section">
-				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Services</li>
-					<li>Contact</li>
-				</ul>
-			</div>
-			<div class="footer-section">
-				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Services</li>
-					<li>Contact</li>
-				</ul>
-			</div>
+	<div class="wrapper stats-wrapper">
+		<div class="content">
+			<ul class="result-details">
+				<li class="time">
+					<p>Time Left</p>
+					<span><b>60</b>s</span>
+				</li>
+				<hr>
+				<li class="mistake">
+					<p>Mistakes</p>
+					<span><b>0</b></span>
+				</li>
+				<hr>
+				<li class="wpm">
+					<p>WPM</p>
+					<span><b>0</b></span>
+				</li>
+				<hr>
+				<li class="cpm">
+					<p>CPM</p>
+					<span><b>0</b></span>
+				</li>
+			</ul>
 		</div>
-		<div class="footer-rights">
-			Copright &#169; www.jacobportfolio.com | All rights reserved
-		</div>
-	</footer>
+	</div>
 
-
-	<!-- Typed.js -->
-	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-	<script>
-		var typed = new Typed('#typedElement', {
-			strings: ['Front End Developer', 'Backend Developer', 'Graphic Designer'],
-			typeSpeed: 50,
-			loop: false,
-		});
-	</script>
-	<script>
-		var allowScrollToTop = false;
-
-		window.addEventListener('scroll', function () {
-			const mainHeader = document.getElementById('main-header');
-			const stickyHeader = document.querySelector('#sticky-header h1');
-			const mainHeaderHeight = mainHeader.offsetHeight;
-
-			console.log(mainHeaderHeight, window.scrollY);
-
-			if (window.scrollY > mainHeaderHeight) {
-				// stickyHeader.style.color = 'rgba(255, 255, 255, 1.0)';
-				stickyHeader.classList.add('show');
-				allowScrollToTop = true;
-			} else {
-				// stickyHeader.style.color = 'rgba(255, 255, 255, 0.0)';
-				stickyHeader.classList.remove('show');
-				allowScrollToTop = false;
-			}
-		});
-
-		document.getElementById('sticky-header')
-			.addEventListener('click', function () {
-				if (allowScrollToTop) {
-					window.scrollTo({
-						top: 0,
-						behaviour: 'smooth'
-					});
-				}
-			});
-	</script>
 </body>
 
 </html>
