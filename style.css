@@ -65,11 +65,11 @@ div.in {
 
 /* Typing Part */
 .wrapper.text-wrapper {
-    height: 48vh;
+    height: 38vh;
 }
 
 .wrapper.text-wrapper .typing-text {
-    height: 25vh;
+    height: 19vh;
     overflow-y: auto;
 }
 

@@ -108,14 +108,14 @@ function typingHandler() {
 	var correctCount = charMatch.reduce((accumulator, num) => {
 		return accumulator + num;
 	}, 0);
-	var incorrectCount = charSize-correctCount;
-	var timeSpannedInMinutes = (maxTime-timeLeft)/60;
+	var incorrectCount = charSize - correctCount;
+	var timeSpannedInMinutes = (maxTime - timeLeft) / 60;
 	mistake.innerText = incorrectCount;
-	cpm.innerText = correctCount/timeSpannedInMinutes;
-	wpm.innerText = correctCount/(5*timeSpannedInMinutes);
+	cpm.innerText = correctCount / timeSpannedInMinutes;
+	wpm.innerText = correctCount / (5 * timeSpannedInMinutes);
 
 	// Reached at the end of para
-	if(charSize === maxCharSize) {
+	if (charSize === maxCharSize) {
 		finishGame();
 	}
 }
@@ -128,14 +128,19 @@ function finishGame() {
 }
 
 function scrollToStats() {
-	stats.scrollIntoView({
-		behavior: 'smooth',
-		block: 'start'
+	// stats.scrollIntoView({
+	// 	behavior: 'smooth',
+	// 	block: 'start'
+	// });
+	var rect = stats.getBoundingClientRect();
+	window.scrollTo({
+		top: rect.top + window.scrollY,
+		behavior: 'smooth'
 	});
 }
 
 function clickHandler() {
-	if (tryAgainBtnPressed) {
+	if (tryAgainBtnPressed && !gameFinished) {
 		inputField.focus();
 	}
 }
