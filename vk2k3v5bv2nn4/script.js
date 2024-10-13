@@ -12,7 +12,7 @@ var gameFinished = false;
 var inputCharacters = '';
 var tryAgainBtnPressed = false;
 
-var maxTime = 5;
+var maxTime = 30;
 var timeLeft = maxTime;
 var timer;
 
