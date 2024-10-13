@@ -29,6 +29,13 @@ div.in {
     width: 100%;
 } */
 
+/* Hide Input Field */
+.input-field {
+    z-index: -999;
+    position: absolute;
+    opacity: 0;
+}
+
 /* Shared Styles */
 .wrapper {
     background-color: white;
@@ -43,6 +50,7 @@ div.in {
     border-radius: 2vw;
     padding: 2vh 5vw;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -75,14 +83,54 @@ div.in {
     font-size: 4.8vw;
 }
 
+.wrapper.text-wrapper .typing-text span.active {
+    position: relative;
+    color: #17a2b8;
+}
+
+
+.wrapper.text-wrapper .typing-text span.active::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    background-color: #17a2b8;
+    animation: blink .9s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.wrapper.text-wrapper .typing-text span.correct {
+    color: #56964f;
+}
+
+.wrapper.text-wrapper .typing-text span.incorrect {
+    background-color: #ffc0cb;
+    color: #cb3439;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+}
+
 .wrapper.text-wrapper button {
     border: none;
     outline: none;
     background-color: #17a2b8;
     color: white;
     font-size: 6vw;
+    width: 47%;
     border-radius: 1vw;
-    padding: 1vh 18vw;
+    padding: 1vh 0;
     transition: transform 0.3s ease;
     transition: background-color 0.3s ease;
 }
@@ -96,10 +144,35 @@ div.in {
     cursor: pointer;
 }
 
+.wrapper.text-wrapper .time-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper.text-wrapper .time-button-container .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.04);
+    border-radius: 2vw;
+    padding: 1.2vh 3vw;
+    width: 47%;
+}
+
+.wrapper.text-wrapper .time-button-container .time p {
+    font-size: 6vw;
+}
+
+.wrapper.text-wrapper .time-button-container .time span {
+    font-size: 6vw;
+}
+
 /* Stats Part */
 .wrapper.stats-wrapper {
-    height: 80vh;
-    margin-bottom: 30vh;
+    height: 65vh;
+    margin-bottom: 50vh;
 }
 
 .wrapper.stats-wrapper .content {
@@ -112,7 +185,6 @@ div.in {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* background-color: blue; */
     width: 100%;
 }
 
