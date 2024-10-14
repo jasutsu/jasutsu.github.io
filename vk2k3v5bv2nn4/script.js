@@ -12,7 +12,7 @@ var gameFinished = false;
 var inputCharacters = '';
 var tryAgainBtnPressed = false;
 
-var maxTime = 30;
+var maxTime = 2;
 var timeLeft = maxTime;
 var timer;
 
@@ -133,10 +133,10 @@ function finishGame() {
 	gameFinished = true;
 	inputField.blur();
 	console.log('Game Finished!');
-	scrollToStats();
+	scrollToElement(stats);
 }
 
-function scrollToStats() {
+function scrollToElement(stats) {
 	var rect = stats.getBoundingClientRect();
 	window.scrollTo({
 		top: rect.top + window.scrollY,

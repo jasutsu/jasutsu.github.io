@@ -59,6 +59,43 @@ body {
     height: 1px;
 }
 
+.wrapper .content button {
+    border: none;
+    outline: none;
+    background-color: #17a2b8;
+    color: white;
+    font-size: 6vw;
+    padding: 1vh 8vw;
+    border-radius: 1vw;
+    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper .content button:active {
+    transform: scale(0.97);
+    background-color: #0c6977;
+}
+
+.wrapper .content button:hover {
+    cursor: pointer;
+}
+
+/* Time Options Part */
+.wrapper.time-wrapper {
+    margin-bottom: 3vh;
+}
+.wrapper.time-wrapper .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.wrapper.time-wrapper .content button {
+    padding: 1vh 0;
+    width: 20%;
+    text-align: center;
+}
+
 /* Typing Part */
 .wrapper.text-wrapper {
     height: 38vh;
@@ -116,28 +153,6 @@ body {
     color: #cb3439;
     outline: 1px solid #fff;
     border-radius: 4px;
-}
-
-.wrapper .content button {
-    border: none;
-    outline: none;
-    background-color: #17a2b8;
-    color: white;
-    font-size: 6vw;
-    width: 47%;
-    border-radius: 1vw;
-    padding: 1vh 0;
-    transition: transform 0.3s ease;
-    transition: background-color 0.3s ease;
-}
-
-.wrapper .content button:active {
-    transform: scale(0.97);
-    background-color: #0c6977;
-}
-
-.wrapper .content button:hover {
-    cursor: pointer;
 }
 
 .wrapper.text-wrapper .time-button-container {
@@ -223,7 +238,6 @@ body {
 }
 
 .wrapper.scores-wrapper .scores tr td {
-    /* border: 1px solid #ccc; */
     border-left: 0;
     border-right: 0;
     padding: 2vh 0;
@@ -248,6 +262,5 @@ body {
 }
 
 .wrapper.scores-wrapper button {
-    width: 70%;
     margin-top: 4vh;
 }
