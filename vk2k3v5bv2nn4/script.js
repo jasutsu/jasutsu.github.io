@@ -15,7 +15,7 @@ var tryAgainBtnPressed = false;
 var charHeight = 0;
 var currentInputWidth = 0;
 
-var maxTime = 5;
+var maxTime = 30;
 var timeLeft = maxTime;
 var timer;
 
@@ -140,7 +140,7 @@ function typingHandler() {
 }
 
 function finishGame() {
-	addToStatsList(mistake.innerText, cpm.innerText, wpm.innerText);
+	addToStatsList(mistake.innerText, cpm.innerText, wpm.innerText, maxTime);
 	gameFinished = true;
 	inputField.blur();
 	console.log('Game Finished!');

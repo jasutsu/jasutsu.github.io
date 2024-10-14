@@ -16,13 +16,14 @@ function updateScoresTable() {
     updateEventListeners(list);
 }
 
-function addToStatsList(mistakes, wpms, cpms) {
+function addToStatsList(mistakes, wpms, cpms, maximumTime) {
     var list = getStatsList();
     var data = {
         'mistake': mistakes,
         'wpm': wpms,
         'cpm': cpms,
-        'time': getTimeObject()
+        'time': getTimeObject(),
+        'maxtime': maximumTime
     }
     list.push(data);
     console.log(list);
@@ -79,7 +80,7 @@ function updateEventListeners(list) {
             let time = data.time;
             cells[0].innerText = time.date;
             cells[1].innerText = time.timeOfDay;
-            cells[2].innerText = '';
+            cells[2].innerText = `(${data.maxtime}s)`;
 
             let cellBackgroundColor = row.style.backgroundColor;
             row.style.backgroundColor = '#ccc';
