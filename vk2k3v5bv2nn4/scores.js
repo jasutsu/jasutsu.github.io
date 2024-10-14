@@ -1,5 +1,5 @@
 var tbody = document.querySelector('.wrapper.scores-wrapper .scores tbody');
-
+var showTimeDelay = 2000;
 function updateScoresTable() {
     var rows = '';
     var list = getStatsList();
@@ -65,21 +65,25 @@ function updateEventListeners(list) {
         let data = list[rows.length-1-i];
 
         row.addEventListener('mousedown', function() {
+            // Show Time
             let cells = row.querySelectorAll('td');
             let time = data.time;
-            console.log(time.date);
-            console.log(cells[0]);
             cells[0].innerText = time.date;
             cells[1].innerText = time.timeOfDay;
             cells[2].innerText = '';
-        });
-        row.addEventListener('mouseup', () => {
-            let cells = row.querySelectorAll('td');
-            console.log(data.mistake);
-            console.log(cells[0]);
-            cells[0].innerText = data.mistake;
-            cells[1].innerText = data.wpm;
-            cells[2].innerText = data.cpm;
+
+            let cellBackgroundColor = row.style.backgroundColor;
+            row.style.backgroundColor = '#ccc';
+
+            // Reset Cell
+            setTimeout(function() {
+                let cells = row.querySelectorAll('td');
+                cells[0].innerText = data.mistake;
+                cells[1].innerText = data.wpm;
+                cells[2].innerText = data.cpm;
+
+                row.style.backgroundColor = cellBackgroundColor;
+            }, showTimeDelay);
         });
     }
 }
