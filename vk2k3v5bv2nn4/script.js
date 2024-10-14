@@ -121,7 +121,7 @@ function typingHandler() {
 }
 
 function finishGame() {
-	addToList(mistake.innerText, cpm.innerText, wpm.innerText);
+	addToStatsList(mistake.innerText, cpm.innerText, wpm.innerText);
 	gameFinished = true;
 	inputField.blur();
 	console.log('Game Finished!');
@@ -140,48 +140,6 @@ function clickHandler() {
 	if (tryAgainBtnPressed && !gameFinished) {
 		inputField.focus();
 	}
-}
-
-/* Previous Score */
-function addToStatsList(mistakes, wpms, cpms) {
-	var list = getStatsList();
-	var data = {
-		'mistake': mistakes,
-		'wpm': wpms,
-		'cpm': cpms,
-		'time': getTimeObject()
-	}
-	list.push(data);
-	console.log(list);
-	localStorage.setItem('statList', JSON.stringify(list));
-}
-
-function getTimeObject() {
-	var currentTime = new Date();
-	const monthNames = ["Jan", "Feb", "Mar", "Apr",
-		"May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-	var month = monthNames[currentTime.getMonth()];
-	var date = String(currentTime.getDate());
-
-	var hours = String(currentTime.getHours()).padStart(2, '0');
-	var minutes = String(currentTime.getMinutes()).padStart(2, '0');
-	var timeOfDay = `${hours}:${minutes}`;
-
-	return {'date': `${month} ${date}`, 'timeOfDay': timeOfDay};
-}
-
-function getStatsList() {
-	var list = JSON.parse(localStorage.getItem('statList')) || [];
-	return list;
-}
-
-function deleteFromStatsList() {
-	var list = getStatsList();
-	if(list.length > 0) {
-		list.pop();
-	}
-	console.log(list);
-	localStorage.setItem('statList', JSON.stringify(list));
 }
 
 setRandomParagraph();
