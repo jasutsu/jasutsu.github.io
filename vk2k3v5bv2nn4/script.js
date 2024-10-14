@@ -12,7 +12,7 @@ var gameFinished = false;
 var inputCharacters = '';
 var tryAgainBtnPressed = false;
 
-var maxTime = 2;
+var maxTime = 30;
 var timeLeft = maxTime;
 var timer;
 
@@ -53,6 +53,10 @@ function resetGame() {
 	tryAgainBtnPressed = true;
 	timeLeft = maxTime;
 	time.innerText = timeLeft;
+
+	mistake.innerText = '0';
+	cpm.innerText = '0';
+	wpm.innerText = '0';
 
 	if (startGame) {
 		startGame = false;
@@ -111,8 +115,12 @@ function typingHandler() {
 	var incorrectCount = charSize - correctCount;
 	var timeSpannedInMinutes = (maxTime - timeLeft) / 60;
 	mistake.innerText = Math.floor(incorrectCount);
-	cpm.innerText = Math.floor(correctCount / timeSpannedInMinutes);
-	wpm.innerText = Math.floor(correctCount / (5 * timeSpannedInMinutes));
+	var cpmValue = 0;
+	if(timeSpannedInMinutes > 0) {
+		cpmValue = correctCount / timeSpannedInMinutes;
+	}
+	cpm.innerText = Math.floor(cpmValue);
+	wpm.innerText = Math.floor(cpmValue/5);
 
 	// Reached at the end of para
 	if (charSize === maxCharSize) {

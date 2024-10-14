@@ -1,6 +1,6 @@
 var tbody = document.querySelector('.wrapper.scores-wrapper .scores tbody');
 var resetScoresBtn = document.querySelector('.wrapper.scores-wrapper button');
-var showTimeDelay = 2000;
+var showTimeDelay = 2500;
 
 function updateScoresTable() {
     var rows = '';
