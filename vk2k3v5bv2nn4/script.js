@@ -12,6 +12,8 @@ var startGame = true;
 var gameFinished = false;
 var inputCharacters = '';
 var tryAgainBtnPressed = false;
+var charHeight = 0;
+var currentInputWidth = 0;
 
 var maxTime = 5;
 var timeLeft = maxTime;
@@ -53,6 +55,7 @@ function resetGame() {
 	inputCharacters = '';
 	tryAgainBtnPressed = true;
 	setMaxTime(maxTime);
+	scrollInputField(0);
 
 	mistake.innerText = '0';
 	cpm.innerText = '0';
@@ -67,6 +70,7 @@ function resetGame() {
 }
 
 function typingHandler() {
+
 	// Check finish game condition
 	if (gameFinished) {
 		inputField.value = inputCharacters;
@@ -84,7 +88,14 @@ function typingHandler() {
 		if (inputCharacters[i] === actualCharacters[i].innerText) {
 			charMatch[i] = 1;
 		}
+		currentInputWidth += actualCharacters[i].getBoundingClientRect().width;
 	}
+
+	// Scroll Behaviour
+	var paraWidth = para.getBoundingClientRect().width;
+	var scrollValue = Math.floor(currentInputWidth/paraWidth);
+	console.log(scrollValue);
+	scrollInputField(scrollValue);
 
 	// Reset classes in para
 	for (var i = 0; i < actualCharacters.length; i += 1) {
@@ -154,6 +165,16 @@ function setMaxTime(t) {
 	timeLeft = t;
 	maxTime = t;
 	time.innerText = t;
+}
+
+function scrollInputField(scrollValue) {
+	console.log('Scroll next line in para');
+	currentInputWidth = 0;
+	var scrollDiv = document.querySelector('.wrapper.text-wrapper .typing-text');
+	var ch = scrollDiv.querySelector('span');
+	var lineHeight = window.getComputedStyle(ch).lineHeight;
+	console.log(scrollDiv.scrollTop);
+	scrollDiv.scrollTop = scrollValue*parseFloat(lineHeight);
 }
 
 setRandomParagraph();
