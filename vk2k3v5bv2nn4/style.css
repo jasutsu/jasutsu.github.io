@@ -177,6 +177,10 @@ body {
     font-size: 6vw;
 }
 
+.wrapper.text-wrapper .time-button-container button {
+    padding: 1vh 3vw;
+}
+
 /* Stats Part */
 .wrapper.stats-wrapper {
     height: 65vh;
