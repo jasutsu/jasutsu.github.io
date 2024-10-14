@@ -6,13 +6,14 @@ var time = document.querySelector('.time-button-container .time span b');
 var mistake = document.querySelector('.result-details .mistake span b');
 var wpm = document.querySelector('.result-details .wpm span b');
 var cpm = document.querySelector('.result-details .cpm span b');
+var timeOptionsButtons = document.querySelectorAll('.wrapper.time-wrapper .content button');
 
 var startGame = true;
 var gameFinished = false;
 var inputCharacters = '';
 var tryAgainBtnPressed = false;
 
-var maxTime = 2;
+var maxTime = 5;
 var timeLeft = maxTime;
 var timer;
 
@@ -51,8 +52,7 @@ function resetGame() {
 	gameFinished = false;
 	inputCharacters = '';
 	tryAgainBtnPressed = true;
-	timeLeft = maxTime;
-	time.innerText = timeLeft;
+	setMaxTime(maxTime);
 
 	mistake.innerText = '0';
 	cpm.innerText = '0';
@@ -136,8 +136,8 @@ function finishGame() {
 	scrollToElement(stats);
 }
 
-function scrollToElement(stats) {
-	var rect = stats.getBoundingClientRect();
+function scrollToElement(elem) {
+	var rect = elem.getBoundingClientRect();
 	window.scrollTo({
 		top: rect.top + window.scrollY,
 		behavior: 'smooth'
@@ -150,8 +150,21 @@ function clickHandler() {
 	}
 }
 
+function setMaxTime(t) {
+	timeLeft = t;
+	maxTime = t;
+	time.innerText = t;
+}
+
 setRandomParagraph();
 document.addEventListener('click', clickHandler);
 tryAgainBtn.addEventListener('click', resetGame);
 inputField.addEventListener('input', typingHandler);
 
+let timeOptions = [5, 10, 30, 60];
+for(let i = 0; i < 4; i += 1) {
+	timeOptionsButtons[i].addEventListener('click', () => {
+		setMaxTime(timeOptions[i]);
+		resetGame();
+	});
+}

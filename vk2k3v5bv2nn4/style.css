@@ -81,9 +81,6 @@ body {
 }
 
 /* Time Options Part */
-.wrapper.time-wrapper {
-    margin-bottom: 3vh;
-}
 .wrapper.time-wrapper .content {
     display: flex;
     justify-content: space-between;
