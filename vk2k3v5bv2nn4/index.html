@@ -9,8 +9,8 @@
 </head>
 
 <body>
-	<button onclick="addToList();">Add</button>
-	<button onclick="deleteFromList();">Remove</button>
+	<button onclick="addToStatsList();">Add</button>
+	<button onclick="deleteFromStatsList();">Remove</button>
 	<div class="app-version">
 		Version: 0.0.1
 	</div>
@@ -59,15 +59,41 @@
 
 	<div class="wrapper scores-wrapper">
 		<div class="content">
-			<h1>Previous Scores</h1>
 			<table class="scores">
+				<caption>Previous Scores</caption>
+				<colgroup>
+					<col class="mistakes">
+					<col class="wpm">
+					<col class="cpm">
+				</colgroup>
 				<thead>
-					<th>Mistakes</th>
-					<th>WPM</th>
-					<th>CPM</th>
+					<tr>
+						<th scope="mistakes">Mistakes</th>
+						<th scope="wpm">WPM</th>
+						<th scope="cpm">CPM</th>
+					</tr>
 				</thead>
 				<tbody>
-					<tr></tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
