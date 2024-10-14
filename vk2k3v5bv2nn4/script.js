@@ -56,6 +56,7 @@ function resetGame() {
 	tryAgainBtnPressed = true;
 	setMaxTime(maxTime);
 	scrollInputField(0);
+	currentInputWidth = 0;
 
 	mistake.innerText = '0';
 	cpm.innerText = '0';

@@ -13,6 +13,8 @@ The way classes are reset in typingHandler() involves multiple loops. This could
 
 Event Listener Enhancements:
 To avoid adding multiple event listeners during resets, ensure that listeners are added only once. Currently, if resetGame is called repeatedly, it may lead to multiple instances of the same event listener.
+
+Change para background color on typing (as there) are too many buttons that can start the game
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +38,7 @@ To avoid adding multiple event listeners during resets, ensure that listeners ar
 	<!-- <button onclick="deleteFromStatsList();">Remove</button> -->
 
 	<div class="app-version">
-		Version: 0.0.2
+		Version: 0.0.3
 	</div>
 
 	<input type="text" class="input-field">
@@ -63,10 +65,15 @@ To avoid adding multiple event listeners during resets, ensure that listeners ar
 
 	<div class="wrapper time-wrapper">
 		<div class="content">
-			<button><b>5</b>s</button>
-			<button><b>10</b>s</button>
-			<button><b>30</b>s</button>
-			<button><b>60</b>s</button>
+			<div class="time-message">
+				<p>Choose your difficulty</p>
+			</div>
+			<div class="buttons">
+				<button><b>5</b>s</button>
+				<button><b>10</b>s</button>
+				<button><b>30</b>s</button>
+				<button><b>60</b>s</button>
+			</div>
 		</div>
 	</div>
 
@@ -94,7 +101,7 @@ To avoid adding multiple event listeners during resets, ensure that listeners ar
 	<div class="wrapper scores-wrapper">
 		<div class="content">
 			<table class="scores">
-				<caption>Previous Scores</caption>
+				<caption>Previous Scores*</caption>
 				<colgroup>
 					<col class="mistakes">
 					<col class="wpm">
@@ -110,6 +117,9 @@ To avoid adding multiple event listeners during resets, ensure that listeners ar
 				<tbody>
 				</tbody>
 			</table>
+			<div class="tap-message">
+				<p>*Tap row to see more info</p>
+			</div>
 			<button>Delete History</button>
 		</div>
 	</div>

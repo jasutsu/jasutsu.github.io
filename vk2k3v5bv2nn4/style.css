@@ -79,13 +79,21 @@ body {
 }
 
 /* Time Options Part */
-.wrapper.time-wrapper .content {
+.wrapper.time-wrapper .content .time-message {
+    width: 100%;
+    text-align: center;
+    color: #8d8d8d;
+    margin-bottom: 2vh;
+}
+
+.wrapper.time-wrapper .content .buttons {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
 }
 
-.wrapper.time-wrapper .content button {
+.wrapper.time-wrapper .content .buttons button {
     padding: 1vh 0;
     width: 20%;
     text-align: center;
@@ -220,7 +228,7 @@ body {
 
 /* Scores Wrapper */
 .wrapper.scores-wrapper caption {
-    font-size: 6vw;
+    font-size: 7vw;
     width: 100%;
     text-align: center;
     padding-bottom: 2vh;
@@ -263,4 +271,11 @@ body {
 
 .wrapper.scores-wrapper button {
     margin-top: 4vh;
+}
+
+.wrapper.scores-wrapper .tap-message {
+    width: 100%;
+    text-align: left;
+    color: #8d8d8d;
+    margin-top: 1vh;
 }
