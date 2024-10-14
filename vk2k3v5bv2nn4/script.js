@@ -12,7 +12,7 @@ var gameFinished = false;
 var inputCharacters = '';
 var tryAgainBtnPressed = false;
 
-var maxTime = 30;
+var maxTime = 2;
 var timeLeft = maxTime;
 var timer;
 
@@ -121,6 +121,7 @@ function typingHandler() {
 }
 
 function finishGame() {
+	addToList(mistake.innerText, cpm.innerText, wpm.innerText);
 	gameFinished = true;
 	inputField.blur();
 	console.log('Game Finished!');
@@ -141,7 +142,30 @@ function clickHandler() {
 	}
 }
 
+/* Previous Score */
+function addToList(mistakes, wpms, cpms) {
+	var list = JSON.parse(localStorage.getItem('statList')) || [];
+	var data = {
+		'mistake': mistakes,
+		'wpm': wpms,
+		'cpm': cpms
+	}
+	list.push(data);
+	console.log(list);
+	localStorage.setItem('statList', JSON.stringify(list));
+}
+
+function deleteFromList() {
+	var list = JSON.parse(localStorage.getItem('statList')) || [];
+	if(list.length > 0) {
+		list.pop();
+	}
+	console.log(list);
+	localStorage.setItem('statList', JSON.stringify(list));
+}
+
 setRandomParagraph();
 document.addEventListener('click', clickHandler);
 tryAgainBtn.addEventListener('click', resetGame);
 inputField.addEventListener('input', typingHandler);
+

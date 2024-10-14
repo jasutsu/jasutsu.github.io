@@ -37,7 +37,7 @@ body {
     background-color: white;
     border-radius: 2vw;
     padding: 2vh 4vw;
-    margin-bottom: 6vh;
+    margin-bottom: 10vh;
     display: flex;
 }
 
@@ -168,7 +168,6 @@ body {
 /* Stats Part */
 .wrapper.stats-wrapper {
     height: 65vh;
-    margin-bottom: 50vh;
 }
 
 .wrapper.stats-wrapper .content {
@@ -202,4 +201,9 @@ body {
 
 .wrapper.stats-wrapper .result-details li span {
     font-size: 8vw;
+}
+
+/* Scores Wrapper */
+.wrapper.scores-wrapper {
+    
 }
