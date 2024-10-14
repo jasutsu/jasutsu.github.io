@@ -243,7 +243,7 @@ body {
     background-color: #efefef;
 }
 
-.wrapper.scores-wrapper .scores tbody tr:hover {
+.wrapper.scores-wrapper .scores tbody tr:active {
     background-color: #ccc;
     cursor: pointer;
 }
