@@ -118,7 +118,7 @@ body {
     border-radius: 4px;
 }
 
-.wrapper.text-wrapper button {
+.wrapper .content button {
     border: none;
     outline: none;
     background-color: #17a2b8;
@@ -131,12 +131,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.wrapper.text-wrapper button:active {
+.wrapper .content button:active {
     transform: scale(0.97);
     background-color: #0c6977;
 }
 
-.wrapper.text-wrapper button:hover {
+.wrapper .content button:hover {
     cursor: pointer;
 }
 
@@ -245,4 +245,9 @@ body {
 
 .wrapper.scores-wrapper .scores tbody tr:hover {
     cursor: pointer;
+}
+
+.wrapper.scores-wrapper button {
+    width: 70%;
+    margin-top: 4vh;
 }

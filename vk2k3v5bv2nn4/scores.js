@@ -1,5 +1,7 @@
 var tbody = document.querySelector('.wrapper.scores-wrapper .scores tbody');
+var resetScoresBtn = document.querySelector('.wrapper.scores-wrapper button');
 var showTimeDelay = 2000;
+
 function updateScoresTable() {
     var rows = '';
     var list = getStatsList();
@@ -28,6 +30,13 @@ function addToStatsList(mistakes, wpms, cpms) {
     updateScoresTable();
 }
 
+function resetStatsList() {
+    var emptyList = [];
+    localStorage.setItem('statList', JSON.stringify(emptyList));
+    updateScoresTable();
+}
+
+/* For Debug Purpose Only */
 function deleteFromStatsList() {
     var list = getStatsList();
     if (list.length > 0) {
@@ -89,3 +98,4 @@ function updateEventListeners(list) {
 }
 
 updateScoresTable();
+resetScoresBtn.addEventListener('click', resetStatsList);
