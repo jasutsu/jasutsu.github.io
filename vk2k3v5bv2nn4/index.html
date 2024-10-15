@@ -1,132 +1,15 @@
 <!--
 youtube link: https://www.youtube.com/watch?v=Hg80AjDNnJk
 
-Overall Recommendations
-Modular Code: Consider breaking down large functions in script.js into smaller utility functions. This will make the code more readable and easier to maintain.
-Accessibility: Adding ARIA roles and attributes to interactive elements (e.g., buttons and inputs) will make the app more accessible for users with disabilities.
-Customization: Allowing users to customize certain features—such as typing time, difficulty (paragraph complexity), or themes—can significantly improve engagement.
-Testing: Implement more robust error handling, particularly around user input, to prevent unexpected crashes. Adding some basic unit tests (e.g., using Jest) for the JavaScript logic would also improve code reliability.
-
-Performance Improvements:
-The repeated use of querySelector could be optimized by caching elements when possible to reduce the time complexity, especially during frequent interactions like typing.
-The way classes are reset in typingHandler() involves multiple loops. This could potentially be a performance bottleneck for larger paragraphs. Instead, you could try managing character states more efficiently.
-
-Event Listener Enhancements:
-To avoid adding multiple event listeners during resets, ensure that listeners are added only once. Currently, if resetGame is called repeatedly, it may lead to multiple instances of the same event listener.
-
-Change para background color on typing (as there) are too many buttons that can start the game
 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Typing Master for Mobile</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<title>AI Chatbot</title>
 </head>
-
 <body>
-	<!-- Debug Buttons -->
-	<!-- <button onclick="scrollInputField();">Hello</button> -->
-	<!-- <button onclick="addToStatsList();">Add</button> -->
-	<!-- <button onclick="deleteFromStatsList();">Remove</button> -->
-
-	<div class="app-version">
-		Version: 0.0.3
-	</div>
-
-	<input type="text" class="input-field">
-	<div class="wrapper text-wrapper">
-		<div class="content">
-			<div class="typing-text">
-				<p>
-					The human brain is one of the most complex structures in the known universe. With billions of
-					neurons and trillions of connections, it can process information at incredible speeds, making
-					decisions and solving problems in milliseconds. Yet, much about the brain remains a mystery to
-					neuroscientists, who continue to uncover new insights into how it functions.
-				</p>
-			</div>
-			<hr>
-			<div class="time-button-container">
-				<div class="time">
-					<p>Time:</p>
-					<span><b>30</b>s</span>
-				</div>
-				<button>Start</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="wrapper time-wrapper">
-		<div class="content">
-			<div class="time-message">
-				<p>Choose your difficulty</p>
-			</div>
-			<div class="buttons">
-				<button><b>5</b>s</button>
-				<button><b>10</b>s</button>
-				<button><b>30</b>s</button>
-				<button><b>60</b>s</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="wrapper stats-wrapper">
-		<div class="content">
-			<ul class="result-details">
-				<li class="mistake">
-					<p>Mistakes</p>
-					<span><b>0</b></span>
-				</li>
-				<hr>
-				<li class="wpm">
-					<p>WPM</p>
-					<span><b>0</b></span>
-				</li>
-				<hr>
-				<li class="cpm">
-					<p>CPM</p>
-					<span><b>0</b></span>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="wrapper scores-wrapper">
-		<div class="content">
-			<table class="scores">
-				<caption>Previous Scores*</caption>
-				<colgroup>
-					<col class="mistakes">
-					<col class="wpm">
-					<col class="cpm">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="mistakes">Mistakes</th>
-						<th scope="wpm">WPM</th>
-						<th scope="cpm">CPM</th>
-					</tr>
-				</thead>
-				<tbody>
-				</tbody>
-			</table>
-			<div class="tap-message">
-				<p>*Tap row to see more info</p>
-			</div>
-			<button>Delete History</button>
-		</div>
-	</div>
-
-	<script src="paragraph.js"></script>
-	<script src="scores.js"></script>
-	<script src="script.js"></script>
+	
 </body>
-
 </html>
