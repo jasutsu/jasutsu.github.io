@@ -7,14 +7,33 @@ youtube link: https://www.youtube.com/watch?v=Hg80AjDNnJk
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<title>AI Chatbot</title>
 </head>
 <body>
-	<h1 class="text-3xl font-bold underline text-center
-				text-purple-500 border-8 border-blue-500
-				rounded-lg inline-block p-5 m-3">
-		Hello Tailwind CSS
-	</h1>
+	<div class="container mx-auto">
+		<header class="flex justify-between items-center sticky top-0 z-10 py-4 bg-blue-900">
+			<div class="flex-shrink-0 ml-6 cursor-pointer">
+				<i class="fas fa-wind fa-2x text-yellow-500"></i>
+				<span class="text-3xl font-semibold text-blue-200">TW</span>
+			</div>
+			<ul class="flex mr-10 font-semibold">
+				<li class="mr-2 p-1 border-b-2 border-yellow-500">
+					<a class="cursor-default text-blue-200" href="#">Home</a>
+				</li>
+				<li class="mr-2 p-1">
+					<a class="text-white hover:text-blue-300" href="#">News</a>
+				</li>
+				<li class="mr-2 p-1">
+					<a class="text-white hover:text-blue-300" href="#">Tutorials</a>
+				</li>
+				<li class="mr-2 p-1">
+					<a class="text-white hover:text-blue-300" href="#">Videos</a>
+				</li>
+			</ul>
+		</header>
+	</div>
 </body>
 </html>
