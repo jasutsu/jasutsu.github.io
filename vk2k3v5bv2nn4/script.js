@@ -6,6 +6,7 @@ const controls = document.querySelectorAll('.controls');
 const GAME_FPS = 125;
 let intervalId;
 let gameOver = false;
+let hasJustEaten = false;
 
 let headX = 15, headY = 15;
 let foodX = 10, foodY = 10;
@@ -66,9 +67,11 @@ const loopGame = () => {
     }
 
     // Snake eats food
+    hasJustEaten = false;
     if (headX === foodX && headY === foodY) {
         snakeBody.push([foodX, foodY]);
         changeFoodPosition();
+        hasJustEaten = true;
 
         // Update Score
         score++;
@@ -84,7 +87,7 @@ const loopGame = () => {
     let playBoardMarkup = `<div class="food" style="grid-area: ${foodY} / ${foodX};"></div>`;
     snakeBody.forEach(([posX, posY], i) => {
         // Game over when snake bites itself
-        if (i !== 0 && posX === headX && posY === headY) {
+        if (i !== 0 && !hasJustEaten && posX === headX && posY === headY) {
             gameOver = true;
         }
 
