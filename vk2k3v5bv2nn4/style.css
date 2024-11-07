@@ -4,3 +4,58 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+:root {
+    --primary-font-color: #b8c6dc;
+    --primary-bg-color: #212837;
+    --secondary-bg-color: #293447;
+    --default-bg-color: #e3f2fd;
+    --food-color: #ff003d;
+    --head-color: #60cbff;
+}
+
+body {
+    background-color: var(--default-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--primary-font-color);
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    border-radius: 5px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+}
+
+.play-board {
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background-color: var(--food-color);
+}
+
+.play-board .head {
+    background-color: var(--head-color);
+}
+
+.controls {
+    display: none;
+}
