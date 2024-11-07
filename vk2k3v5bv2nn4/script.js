@@ -1,7 +1,7 @@
 const scoreElement = document.querySelector('.score');
 const highScoreElement = document.querySelector('.high-score');
 const playBoard = document.querySelector('.play-board');
-const controls = document.querySelectorAll('.controls');
+const controls = document.querySelectorAll('.controls i');
 
 const GAME_FPS = 125;
 let intervalId;
@@ -103,3 +103,6 @@ changeFoodPosition();
 // Game Loop
 intervalId = setInterval(loopGame, GAME_FPS);
 document.addEventListener('keydown', changeDirection);
+controls.forEach(control => {
+    control.addEventListener('click', () => changeDirection({key: control.dataset.key}));
+});
