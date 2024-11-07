@@ -47,3 +47,39 @@ body {
 .play-board .head {
     background-color: #60cbff;
 }
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    width: calc(100% / 4);
+    color: #b8c6dc;
+    padding: 25px 0;
+    border-left: 1px solid #212837;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
