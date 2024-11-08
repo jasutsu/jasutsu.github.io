@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Color Variables for light theme */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --light-white-color: #f0f0f0;
+    --light-gray-color: #e5e5e5;
+    --border-color: #d4d4d4;
+    --secondary-color: #404040;
+    
+    --primary-color: #3b82f6;
+    --overlay-dark-color: rgba(0, 0, 0, 0.6);
+    --scroll-color: #a6a6a6;
+}
+
+body.dark-mode {
+    --white-color: #171717;
+    --black-color: #d4d4d4;
+    --light-white-color: #333;
+    --light-gray-color: #404040;
+    --border-color: #737373;
+    --secondary-color: #d4d4d4;
+}
