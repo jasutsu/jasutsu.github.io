@@ -27,3 +27,53 @@ body.dark-mode {
     --border-color: #737373;
     --secondary-color: #d4d4d4;
 }
+
+body {
+    background: var(--white-color);
+}
+
+/* <<<<<< HEADER / NAVBAR >>>>>>> */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar :where(.logo-image, .user-image) {
+    width: 36px;
+    border-radius: 50%;
+}
+
+.navbar .nav-section {
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.navbar .nav-section .nav-logo {
+    text-decoration: none;
+    color: var(--black-color);
+    display: flex;
+}
+
+.navbar .nav-logo .logo-text {
+    text-decoration: none;
+}
+
+.navbar .nav-button {
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    background: none;
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-button:hover {
+    background: var(--light-gray-color);
+}
