@@ -96,6 +96,7 @@ header,
 
 .container .nav-button i {
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;

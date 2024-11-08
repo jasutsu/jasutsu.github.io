@@ -1,9 +1,10 @@
 const themeButton = document.querySelector('.theme-button i');
+const themeButtonOuter = document.querySelector('.theme-button');
 const menuButtons = document.querySelectorAll('.menu-button');
 const screenOverlay = document.querySelector('.screen-overlay');
 
 // Toggle dark mode
-themeButton.addEventListener('click', () => {
+themeButtonOuter.addEventListener('click', () => {
     const isDarkMode = document.body.classList.toggle('dark-mode');
     let darkModeStatus = isDarkMode ? 'enabled' : 'disabled';
     if (darkModeStatus === 'enabled') {
