@@ -127,14 +127,14 @@ body {
 
 .main-layout .sidebar {
     width: 280px;
-    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     background: var(--white-color);
 }
 
 .main-layout .sidebar .link-section {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 220px;
 }
 
 .main-layout .sidebar .link-item {
@@ -200,3 +200,67 @@ body {
     background: var(--black-color);
 }
 
+.content-wrapper .video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1.25rem 0.4rem;
+}
+
+.video-card {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.video-card .thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+}
+
+.video-card .thumbnail-container {
+    position: relative;
+}
+
+.video-card .duration {
+    position: absolute;
+    bottom: 0.65rem;
+    right: 0.7rem;
+    color: #fff;
+    background: var(--overlay-dark-color);
+    padding: 0.2rem .5rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+}
+
+.video-card .video-details-container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.55rem 0.25rem;
+}
+
+.video-card .video-details-container .video-metadata {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.video-card .video-details-container .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.video-card :where(.channel-name, .views) {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.video-card .title {
+    font-size: 1rem;
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
