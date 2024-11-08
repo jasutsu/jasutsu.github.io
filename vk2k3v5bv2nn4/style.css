@@ -24,7 +24,8 @@
     max-height: 100vh;
 }
 
-header, .category-list {
+header,
+.category-list {
     position: sticky;
     top: 0;
     background-color: var(--white-color);
@@ -40,33 +41,33 @@ header, .category-list {
     padding: 0.5rem 1rem;
 }
 
-.navbar :where(.nav-section, .search-form, .nav-logo) {
+.container :where(.nav-section, .search-form, .nav-logo) {
     display: flex;
     align-items: center;
 }
 
-.navbar :where(.logo-image, .user-image) {
+.container :where(.logo-image, .user-image) {
     width: 32px;
     cursor: pointer;
     border-radius: 50%;
 }
 
-.navbar .nav-section {
+.container .nav-section {
     gap: 1rem;
 }
 
-.navbar .nav-logo {
+.container .nav-logo {
     display: flex;
     gap: 0.5rem;
     text-decoration: none;
 }
 
-.navbar .nav-logo .logo-text {
+.container .nav-logo .logo-text {
     font-size: 1.25rem;
     color: var(--black-color);
 }
 
-.navbar .nav-button {
+.container .nav-button {
     border: none;
     cursor: pointer;
     width: 40px;
@@ -75,11 +76,11 @@ header, .category-list {
     background: 0;
 }
 
-.navbar .nav-button:hover {
+.container .nav-button:hover {
     background-color: var(--light-gray-color);
 }
 
-.navbar .nav-button i {
+.container .nav-button i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,6 +115,7 @@ header, .category-list {
     border-radius: 0 3rem 3rem 0;
     border: 1px solid var(--border-color);
 }
+
 /* <<<<<<< NAVBAR >>>>>>> */
 
 
@@ -225,6 +227,7 @@ header, .category-list {
 .video-list .video-card .channel-name {
     margin: 0.25rem 0.15rem;
 }
+
 /* <<<<<<< MAIN LAYOUT / CONTENT >>>>>>> */
 
 
@@ -233,6 +236,11 @@ header, .category-list {
 body.sidebar-hidden .main-layout .sidebar {
     width: 0;
     padding: 0;
+}
+
+.main-layout .sidebar .nav-left {
+    padding: 0.5rem 0.3rem;
+    display: none;
 }
 
 .main-layout .sidebar {
@@ -286,4 +294,43 @@ body.sidebar-hidden .main-layout .sidebar {
     margin: 0.625rem 0;
     background-color: var(--light-gray-color);
 }
+
 /* <<<<<<< MAIN LAYOUT / SIDEBAR >>>>>>> */
+
+
+
+/* <<<<<<< RESPONSIVE DESIGN >>>>>>> */
+@media (max-width: 768px) {
+    .main-layout .screen-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--overlay-dark-color);
+        z-index: 15;
+        transition: 0.2s ease;
+    }
+
+    body.sidebar-hidden .main-layout .screen-overlay {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .main-layout .sidebar {
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        transition: 0.2s ease;
+    }
+    
+    .main-layout .sidebar .nav-left {
+        display: flex;
+    }
+
+    body.sidebar-hidden .main-layout .sidebar {
+        left: -280px;
+    }
+}
