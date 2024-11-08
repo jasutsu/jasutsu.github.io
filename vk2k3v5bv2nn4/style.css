@@ -175,6 +175,10 @@ body {
     background: var(--light-gray-color);
 }
 
+body.sidebar-hidden .sidebar {
+    display: none;
+}
+
 /* <<<<<< MAIN LAYOUT / SIDEBAR >>>>>>> */
 
 

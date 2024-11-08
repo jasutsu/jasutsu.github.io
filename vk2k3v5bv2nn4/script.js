@@ -1,4 +1,5 @@
 const themeButton = document.querySelector('.theme-button i');
+const menuButton = document.querySelector('.menu-button');
 
 // Toggle dark mode
 themeButton.addEventListener('click', () => {
@@ -21,3 +22,13 @@ if (darkModeStatus === 'enabled') {
     document.body.classList.remove('dark-mode');
     themeButton.classList.replace('uil-sun', 'uil-moon');
 }
+
+// Show side bar for larger screens
+if (window.innerWidth > 768) {
+    document.body.classList.remove('sidebar-hidden');
+}
+
+// Toggle sidebar
+menuButton.addEventListener('click', () => {
+    document.body.classList.toggle('sidebar-hidden');
+});
