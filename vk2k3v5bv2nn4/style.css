@@ -172,3 +172,31 @@ body {
     height: 2px;
     background: var(--light-gray-color);
 }
+/* <<<<<< MAIN LAYOUT / SIDEBAR >>>>>>> */
+
+
+
+/* <<<<<< MAIN LAYOUT / CONTENT >>>>>>> */
+.main-layout .category-list {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.main-layout .category-list .category-button {
+    border: none;
+    cursor: pointer;
+    padding: 0 0.75rem;
+    border-radius: 0.5rem;
+    background: var(--light-gray-color);
+    color: var(--black-color);
+}
+
+.main-layout .category-list .category-button:hover {
+    background: var(--light-white-color);
+}
+
+.main-layout .category-list .category-button.active {
+    color: var(--white-color);
+    background: var(--black-color);
+}
+
