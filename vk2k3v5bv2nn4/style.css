@@ -116,6 +116,10 @@ header,
     border: 1px solid var(--border-color);
 }
 
+.navbar .nav-right .search-button {
+    display: none;
+}
+
 /* <<<<<<< NAVBAR >>>>>>> */
 
 
@@ -301,6 +305,14 @@ body.sidebar-hidden .main-layout .sidebar {
 
 /* <<<<<<< RESPONSIVE DESIGN >>>>>>> */
 @media (max-width: 768px) {
+    .navbar .nav-center {
+        display: none;
+    }
+
+    .navbar .nav-right .search-button {
+        display: block;
+    }
+
     .main-layout .screen-overlay {
         position: absolute;
         top: 0;
