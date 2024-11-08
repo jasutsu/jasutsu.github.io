@@ -1,4 +1,4 @@
-[
+video_metadata = [
     {
         "Thumbnail URL": "https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg",
         "Channel Name": "CodingNepal",

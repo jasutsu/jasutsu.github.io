@@ -131,3 +131,55 @@
     white-space: nowrap;
     background-color: var(--light-gray-color);
 }
+
+.video-list .video-card {
+    text-decoration: none;
+}
+
+.video-list .video-card .video-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 0.5rem;
+}
+
+.video-list .video-card .thumbnail-container {
+    position: relative;
+}
+
+.video-list .video-card .thumbnail {
+    width: 100%;
+    border-radius: 0.5rem;
+    aspect-ratio: 16 / 9;
+}
+
+.video-list .video-card .duration {
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.8rem;
+    color: #fff;
+    background: var(--overlay-dark-color);
+    padding: 0 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.video-list .video-card .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.video-list .video-card .title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-color)
+}
+
+.video-list .video-card p {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.video-list .video-card .channel-name {
+    margin: 0.25rem 0.15rem;
+}
