@@ -352,4 +352,20 @@ body.sidebar-hidden .sidebar {
     .main-layout .sidebar .nav-left {
         display: flex;
     }
+
+    .container .screen-overlay {
+        background: var(--overlay-dark-color);
+        top: 0;
+        left: 0;
+        z-index: 15;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 0.2s ease;
+    }
+
+    body.sidebar-hidden .container .screen-overlay {
+        opacity: 0;
+        pointer-events: none;
+    }
 }

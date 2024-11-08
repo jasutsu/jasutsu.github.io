@@ -1,5 +1,6 @@
 const themeButton = document.querySelector('.theme-button i');
 const menuButtons = document.querySelectorAll('.menu-button');
+const screenOverlay = document.querySelector('.screen-overlay');
 
 // Toggle dark mode
 themeButton.addEventListener('click', () => {
@@ -33,4 +34,8 @@ menuButtons.forEach(menuButton => {
     menuButton.addEventListener('click', () => {
         document.body.classList.toggle('sidebar-hidden');
     });
+});
+
+screenOverlay.addEventListener('click', () => {
+    document.body.classList.toggle('sidebar-hidden');
 });
