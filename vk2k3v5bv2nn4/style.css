@@ -104,6 +104,7 @@ header,
 
 .navbar .nav-center {
     display: flex;
+    gap: 0.5rem;
     width: 100%;
     justify-content: center;
 }
@@ -120,8 +121,14 @@ header,
     padding: 0 1rem;
     outline: none;
     font-size: 1rem;
+    color: var(--black-color);
+    background: var(--white-color);
     border-radius: 3rem 0 0 3rem;
     border: 1px solid var(--border-color)
+}
+
+.navbar .search-form .search-input:focus {
+    border-color: var(--primary-color);
 }
 
 .navbar .search-form .search-button {
@@ -134,7 +141,6 @@ header,
 .navbar .nav-right .search-button {
     display: none;
 }
-
 /* <<<<<<< NAVBAR >>>>>>> */
 
 
@@ -143,6 +149,7 @@ header,
 .main-layout {
     display: flex;
     overflow-y: auto;
+    scrollbar-color: var(--scroll-color) transparent;
 }
 
 .main-layout .content-wrapper {
