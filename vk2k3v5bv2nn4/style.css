@@ -230,6 +230,11 @@ header, .category-list {
 
 
 /* <<<<<<< MAIN LAYOUT / SIDEBAR >>>>>>> */
+body.sidebar-hidden .main-layout .sidebar {
+    width: 0;
+    padding: 0;
+}
+
 .main-layout .sidebar {
     width: 280px;
     padding: 0 0.7rem;
@@ -281,3 +286,4 @@ header, .category-list {
     margin: 0.625rem 0;
     background-color: var(--light-gray-color);
 }
+/* <<<<<<< MAIN LAYOUT / SIDEBAR >>>>>>> */
