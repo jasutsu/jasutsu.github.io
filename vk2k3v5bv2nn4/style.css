@@ -132,6 +132,13 @@
     background-color: var(--light-gray-color);
 }
 
+.content-wrapper .video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1.25rem 0.4rem;
+}
+
 .video-list .video-card {
     text-decoration: none;
 }
@@ -172,7 +179,15 @@
 .video-list .video-card .title {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--black-color)
+    color: var(--black-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.video-list .video-card .title:hover {
+    color: var(--primary-color);
 }
 
 .video-list .video-card p {
