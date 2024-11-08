@@ -118,6 +118,10 @@ body {
     width: auto;
 }
 
+.navbar .nav-right .search-button {
+    display: none;
+}
+
 /* <<<<<< HEADER / NAVBAR >>>>>>> */
 
 
@@ -278,4 +282,24 @@ body.sidebar-hidden .sidebar {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+}
+
+/* <<<<<< MAIN LAYOUT / CONTENT >>>>>>> */
+
+
+
+/* <<<<<< RESPONSIVE >>>>>>> */
+@media (max-width: 768px) {
+    .navbar .nav-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar .nav-center {
+        display: none;
+    }
+
+    .navbar .nav-right .search-button {
+        display: flex;
+    }
 }
