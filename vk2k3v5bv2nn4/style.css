@@ -116,3 +116,59 @@ body {
     padding: 0 1.25rem;
     width: auto;
 }
+/* <<<<<< HEADER / NAVBAR >>>>>>> */
+
+
+
+/* <<<<<< MAIN LAYOUT / SIDEBAR >>>>>>> */
+.main-layout {
+    display: flex;
+}
+
+.main-layout .sidebar {
+    width: 280px;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    background: var(--white-color);
+}
+
+.main-layout .sidebar .link-section {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.main-layout .sidebar .link-item {
+    display: flex;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.main-layout .sidebar .link-item:hover {
+    background: var(--light-gray-color);
+}
+
+.main-layout .sidebar .section-title {
+    display: flex;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: .938rem 1rem;
+}
+
+.main-layout .sidebar .link-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-layout .sidebar .link-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.main-layout .sidebar .section-separator {
+    height: 2px;
+    background: var(--light-gray-color);
+}
