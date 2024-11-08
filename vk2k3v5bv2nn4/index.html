@@ -16,9 +16,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <style>
+        .app-version {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1vh;
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body class="dark-mode sidebar-hidden">
+    
+    <div class="app-version">
+        Version: 0.0.1
+    </div>
+
     <div class="container">
         <div class="screen-overlay"></div>
 
