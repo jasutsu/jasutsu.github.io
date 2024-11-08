@@ -48,6 +48,7 @@ body {
 .navbar .nav-section {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .navbar .nav-section .nav-logo {
