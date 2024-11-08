@@ -17,9 +17,23 @@
     --overlay-dark-color: rgba(0, 0, 0, 0.6);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+header, .category-list {
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+
 /* <<<<<<< NAVBAR >>>>>>> */
 .navbar {
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
@@ -105,6 +119,7 @@
 
 .main-layout {
     display: flex;
+    overflow-y: auto;
 }
 
 .main-layout .content-wrapper {
@@ -130,6 +145,16 @@
     border-radius: 0.5rem;
     white-space: nowrap;
     background-color: var(--light-gray-color);
+}
+
+.category-list .category-button.active {
+    color: var(--white-color);
+    background: var(--black-color);
+    pointer-events: none;
+}
+
+.category-list .category-button:hover {
+    background: var(--border-color);
 }
 
 .content-wrapper .video-list {
