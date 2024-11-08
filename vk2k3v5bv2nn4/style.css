@@ -17,10 +17,7 @@
     --overlay-dark-color: rgba(0, 0, 0, 0.6);
 }
 
-body {
-    /* background-color: rgb(44, 13, 72); */
-}
-
+/* <<<<<<< NAVBAR >>>>>>> */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -101,4 +98,36 @@ body {
     padding: 0 1.25rem;
     border-radius: 0 3rem 3rem 0;
     border: 1px solid var(--border-color);
+}
+/* <<<<<<< NAVBAR >>>>>>> */
+
+/* <<<<<<< MAIN LAYOUT >>>>>>> */
+
+.main-layout {
+    display: flex;
+}
+
+.main-layout .content-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0 1rem;
+}
+
+.category-list {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.75rem 0.7rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.category-list .category-button {
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    background-color: var(--light-gray-color);
 }
