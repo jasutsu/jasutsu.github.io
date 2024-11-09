@@ -41,6 +41,15 @@ body {
     padding-bottom: 40px;
 }
 
+.wrapper form .field {
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Input Fields */
+
 .wrapper form .field input {
     font-size: 18px;
     height: 50px;
@@ -83,4 +92,48 @@ body {
 
 .wrapper form .field .error {
     color: var(--red-color);
+}
+
+.wrapper form .field .error-txt {
+    text-align: left;
+    margin-top: 5px;
+}
+
+form .error {
+    display: none;
+}
+
+form.error .error {
+    display: block;
+}
+
+
+
+
+/* Action Buttons */
+
+form .link a {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+form .link.pass-link {
+    text-align: left;
+}
+
+form input[type="submit"] {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--dark-blue-color);
 }
