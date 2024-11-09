@@ -43,6 +43,7 @@ body {
 
 .wrapper form .field {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 
@@ -53,12 +54,12 @@ body {
 .wrapper form .field input {
     font-size: 18px;
     height: 50px;
-    width: 100%;
     padding-left: 45px;
-    padding-right: 45px;
+    padding-right: 15px;
     outline: none;
     border: 1px solid var(--border-color);
     border-radius: 5px;
+    width: 100%;
 }
 
 .wrapper form .field input:focus {
@@ -99,15 +100,35 @@ body {
     margin-top: 5px;
 }
 
-form .error {
+form .field .error {
     display: none;
 }
 
-form.error .error {
+form .field.error .error {
     display: block;
 }
 
+form .field.error input {
+    border-color: var(--red-color);
+}
 
+form .field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        margin-left: 0;
+    }
+
+    20%, 80% {
+        margin-left: -12px;
+    }
+
+    40%, 60% {
+        margin-left: 12px;
+    }
+}
 
 
 /* Action Buttons */
