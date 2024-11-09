@@ -58,6 +58,7 @@ body {
     padding-right: 40px;
     outline: none;
     border: 1px solid var(--border-color);
+    border-bottom-width: 2px;
     border-radius: 5px;
     width: 100%;
 }

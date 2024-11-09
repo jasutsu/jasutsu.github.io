@@ -38,4 +38,18 @@ emailInput.oninput = () => {
 form.onsubmit = (e) => {
     e.preventDefault();
     inputEmailAtLeastOnce = true;
+
+    if (passwordInput.value == "") {
+        passwordField.classList.add("error");
+    }
+    
+    const email = emailInput.value;
+
+    if (email == ""){
+        emailField.classList.add("error");
+        emailErrorText.innerText = "Email address can't be blank";
+    } else if (inputEmailAtLeastOnce && !isValidEmail(email)) {
+        emailField.classList.add("error");
+        emailErrorText.innerText = "Enter a valid email address";
+    }
 };
