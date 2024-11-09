@@ -3,17 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 :root {
-    --window-bg-color: #5372f0;
-    --form-bg-color: #fff;
+    --blue-color: #5372f0;
+    --dark-blue-color: #2c52ed;
+    --white-color: #fff;
     --border-color: #bfbfbf;
+    --warning-color: #dc3545;
 }
 
 body {
-    background: var(--window-bg-color);
+    background: var(--blue-color);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,7 +23,7 @@ body {
 }
 
 .wrapper {
-    background: var(--form-bg-color);
+    background: var(--white-color);
     width: 380px;
     padding: 40px 30px 50px 30px;
     border-radius: 5px;
@@ -40,7 +42,8 @@ body {
 form input {
     height: 50px;
     width: 100%;
-    padding: 0 15px;
+    padding-left: 50px;
+    padding-right: 20px;
     border-radius: 5px;
     border: 1px solid var(--border-color);
     border-bottom-width: 2px;
@@ -51,4 +54,69 @@ form input {
 form input::placeholder {
     color: var(--border-color);
     font-size: 17px;
+}
+
+form .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field .input-area {
+    position: relative;
+}
+
+form .field .input-area i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 18px;
+}
+
+form .field .icon {
+    left: 15px;
+    color: var(--border-color);
+}
+
+form .field .error-icon {
+    right: 15px;
+    color: var(--warning-color)
+}
+
+form .field .error-txt {
+    color: var(--warning-color);
+    text-align: left;
+    margin-top: 5px;
+}
+
+form .field .error {
+    display: none;
+}
+
+form .pass-link {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+form input[type="submit"] {
+    color: var(--white-color);
+    background: var(--blue-color);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background: var(--dark-blue-color);
 }
