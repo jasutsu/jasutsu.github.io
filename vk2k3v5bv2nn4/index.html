@@ -15,9 +15,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- App Version -->
+    <style>
+        .app-version {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1vh;
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="app-version">
+        Version: 0.0.1
+    </div>
+
     <div class="wrapper">
         <!-- Header -->
         <header>Login Form</header>
@@ -31,7 +49,7 @@
                 </div>
                 <div class="error error-txt">Email can't be blank</div>
             </div>
-            
+
             <!-- Password -->
             <div class="field password">
                 <div class="input-area">
@@ -41,14 +59,14 @@
                 </div>
                 <div class="error error-txt">Password can't be blank</div>
             </div>
-            
+
             <!-- Action Buttons -->
             <div class="pass-link">
                 <a href="#">Forgot Password?</a>
             </div>
 
             <input type="submit" value="Login">
-            
+
             <div class="signup-link">
                 Not yet Member? <a href="#">Signup now</a>
             </div>
