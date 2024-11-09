@@ -57,7 +57,6 @@ emailInput.oninput = () => {
 };
 
 const isValidEmail = (text) => {
-    // const emailRegex = /^[a-zA-Z0-9_-.]+@[a-zA-Z0-9_-.]+\.[a-zA-Z]{2,}$/;
-    // return emailRegex.test(text);
-    return text == 'abc';
+    const emailRegex = /^[a-zA-Z0-9_-.]+@[a-zA-Z0-9_-.]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(text);
 };

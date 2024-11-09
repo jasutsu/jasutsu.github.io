@@ -8,9 +8,8 @@ const form = document.querySelector('form');
 let inputEmailAtLeastOnce = false;
 
 const isValidEmail = (text) => {
-    // const emailRegex = /^[^ ]+@[^ ]+\.[^ ]{2,3}$/;
-    // return emailRegex.test(text);
-    return text == "abc";
+    const emailRegex = /^[^ ]+@[^ ]+\.[^ ]{2,3}$/;
+    return emailRegex.test(text);
 };
 
 passwordInput.oninput = () => {
@@ -40,16 +39,21 @@ form.onsubmit = (e) => {
     inputEmailAtLeastOnce = true;
 
     if (passwordInput.value == "") {
-        passwordField.classList.add("error");
+        passwordField.classList.add("error", "shake");
     }
     
     const email = emailInput.value;
 
     if (email == ""){
-        emailField.classList.add("error");
+        emailField.classList.add("error", "shake");
         emailErrorText.innerText = "Email address can't be blank";
     } else if (inputEmailAtLeastOnce && !isValidEmail(email)) {
-        emailField.classList.add("error");
+        emailField.classList.add("error", "shake");
         emailErrorText.innerText = "Enter a valid email address";
     }
+    
+    setTimeout(() => {
+        passwordField.classList.remove("shake");
+        emailField.classList.remove("shake");
+    }, 500);
 };
