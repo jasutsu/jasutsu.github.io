@@ -11,7 +11,7 @@
     --dark-blue-color: #2c52ed;
     --white-color: #fff;
     --border-color: #bfbfbf;
-    --warning-color: #dc3545;
+    --red-color: #dc3545;
 }
 
 body {
@@ -61,6 +61,24 @@ form .field {
     margin-bottom: 20px;
 }
 
+form .field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        margin-left: 0;
+    }
+
+    20%, 80% {
+        margin-left: -12px;
+    }
+
+    40%, 60% {
+        margin-left: 12px;
+    }
+}
+
 form .field .input-area {
     position: relative;
 }
@@ -80,17 +98,25 @@ form .field .icon {
 
 form .field .error-icon {
     right: 15px;
-    color: var(--warning-color)
+    color: var(--red-color)
 }
 
 form .field .error-txt {
-    color: var(--warning-color);
+    color: var(--red-color);
     text-align: left;
     margin-top: 5px;
 }
 
 form .field .error {
     display: none;
+}
+
+form .field.error .error {
+    display: block;
+}
+
+form .field.error input {
+    border-color: var(--red-color);
 }
 
 form .pass-link {
