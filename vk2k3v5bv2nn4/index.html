@@ -21,9 +21,27 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
 
+    <!-- App Version -->
+    <style>
+        .app-version {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1vh;
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="app-version">
+        Version: 0.0.1
+    </div>
+
     <div class="container swiper">
         <div class="card-wrapper">
             <ul class="card-list swiper-wrapper">
