@@ -3,11 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid seashell;
+    border: 1px solid black;
 }
 :root {
     --blue-color: #4285f4;
+    --white-color: #fff;
 }
 body {
     background: var(--blue-color);
+}
+.wrapper {
+    width: 380px;
+    margin: 130px auto 0;
+}
+.select-btn {
+    background: var(--white-color);
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 65px;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.select-btn i {
+    font-size: 31px;
 }
