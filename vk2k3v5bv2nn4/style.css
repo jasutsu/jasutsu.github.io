@@ -34,13 +34,21 @@ body {
     cursor: pointer;
 }
 .select-btn i {
-    font-size: 31px;
+    font-size: 28px;
+    transition: transform 0.2s linear;
+}
+.wrapper.active .select-btn i {
+    transform: rotate(-180deg);
 }
 .content {
     background: var(--white-color);
     border-radius: 7px;
     padding: 20px;
     margin-top: 15px;
+    display: none;
+}
+.wrapper.active .content {
+    display: block;
 }
 .content .search {
     position: relative;
@@ -48,7 +56,7 @@ body {
 .search i {
     position: absolute;
     left: 15px;
-    font-size: 18Jpx;
+    font-size: 18px;
     line-height: 53px;
     color: var(--gray-color);
 }
@@ -86,6 +94,7 @@ body {
     border-radius: 5px;
     font-size: 21px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .options li:hover {
     background: var(--light-gray-color);
