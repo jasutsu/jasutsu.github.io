@@ -69,6 +69,9 @@ body {
     border: 1px solid var(--gray-color);
     outline: none;
 }
+.search input:focus {
+    border-color: var(--blue-color);
+}
 .content .options {
     margin-top: 10px;
     max-height: 250px;
@@ -96,6 +99,6 @@ body {
     margin-right: 10px;
     cursor: pointer;
 }
-.options li:hover {
+.options li:hover, li.selected {
     background: var(--light-gray-color);
 }

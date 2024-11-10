@@ -10,7 +10,7 @@ selectButton.addEventListener('click', () => {
 // Update name
 const updateName = (selectedLi) => {
     searchInput.value = "";
-    populateCountries(countries);
+    populateCountries(countries, selectedLi.innerText);
     wrapper.classList.remove('active');
     countryText.innerText = selectedLi.innerText;
 };
