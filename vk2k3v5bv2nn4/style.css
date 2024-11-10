@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 :root {
     --blue-color: #4285f4;
     --white-color: #fff;
+    --gray-color: #b3b3b3;
 }
+
 body {
     background: var(--blue-color);
 }
@@ -16,6 +18,7 @@ body {
     width: 380px;
     margin: 130px auto 0;
 }
+
 .select-btn {
     background: var(--white-color);
     font-size: 22px;
@@ -29,4 +32,29 @@ body {
 }
 .select-btn i {
     font-size: 31px;
+}
+.content {
+    background: var(--white-color);
+    border-radius: 7px;
+    padding: 20px;
+    margin-top: 15px;
+}
+.content .search {
+    position: relative;
+}
+.search i {
+    position: absolute;
+    left: 15px;
+    font-size: 18Jpx;
+    line-height: 53px;
+    color: var(--gray-color);
+}
+.search input {
+    height: 53px;
+    font-size: 17px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 15px 0 45px;
+    border: 1px solid var(--gray-color);
+    outline: none;
 }
