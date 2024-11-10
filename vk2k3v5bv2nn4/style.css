@@ -9,6 +9,9 @@
 :root {
     --gradient-color: linear-gradient(#eceffe, #ced6fb);
     --white-color: #fff;
+    --blue-color: #5372f0;
+    --light-blue-color: #dde4ff;
+    --black-color: #000;
 }
 
 body {
@@ -30,6 +33,13 @@ body {
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    border: 2px solid var(--blue-color);
 }
 
 .card-list .card-link .card-image {
@@ -39,6 +49,38 @@ body {
     border-radius: 10px;
 }
 
-.card-list .card-link.badge {
-    
+.card-list .card-link .badge {
+    color: var(--blue-color);
+    background: var(--light-blue-color);
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 50px;
+    font-weight: 500;
+    margin: 16px 0 18px;
+}
+
+.card-list .card-link .card-title {
+    color: var(--black-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    color: var(--blue-color);
+    background: none;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    border: none;
+    border: 2px solid var(--blue-color);
+    transition: 0.2s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    background: var(--blue-color);
+    color: var(--white-color);
 }
