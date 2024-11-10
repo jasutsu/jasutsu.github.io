@@ -35,6 +35,12 @@ body {
     font-size: 22px;
     cursor: pointer;
 }
+.wrapper .select-btn i {
+    transition: transform 0.2s linear;
+}
+.wrapper.active .select-btn i {
+    transform: rotate(-180deg);
+}
 
 
 .content {
@@ -49,7 +55,7 @@ body {
     position: relative;
     font-size: 20px;
 }
-.search i {
+.wrapper .search i {
     position: absolute;
     line-height: 53px;
     left: 15px;
@@ -72,6 +78,7 @@ body {
 .search input:focus {
     border: 1px solid var(--blue-color);
 }
+
 
 .wrapper .content {
     display: none;
@@ -102,6 +109,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-.options li:hover {
+.options li:hover, li.selected {
     background: var(--light-gray-color);
 }

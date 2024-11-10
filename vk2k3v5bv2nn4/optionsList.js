@@ -51,10 +51,11 @@ const countries = [
 
 const options = document.querySelector('.options');
 
-const populateCountries = (arr) => {
+const populateCountries = (arr, selectedCountry = "") => {
     let countriesMarkup = "";
     arr.forEach(country => {
-        countriesMarkup += `<li>${country}</li>`;
+        const selected = (selectedCountry == country ? "selected" : "");
+        countriesMarkup += `<li onclick="updateName(this);" class="${selected}">${country}</li>`;
     });
     options.innerHTML = countriesMarkup;
 };

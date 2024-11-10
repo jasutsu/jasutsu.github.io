@@ -7,3 +7,10 @@ const searchInput = wrapper.querySelector('.search input');
 selectButton.addEventListener('click', () => {
     wrapper.classList.toggle('active');
 });
+
+const updateName = (selectedLi) => {
+    const selectedCountry = selectedLi.innerText;
+    countryText.innerText = selectedCountry;
+    wrapper.classList.remove('active');
+    populateCountries(countries, selectedCountry);
+};
