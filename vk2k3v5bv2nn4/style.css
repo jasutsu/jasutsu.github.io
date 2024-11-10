@@ -3,5 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    border: 1px solid red;
 }
 
+:root {
+    --gradient-color: linear-gradient(#eceffe, #ced6fb);
+}
+
+body {
+    background: var(--gradient-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
