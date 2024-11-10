@@ -49,11 +49,17 @@ const countries = [
     "Vietnam"
 ];
 const options = document.querySelector('.wrapper .options');
-let countriesMarkup = "";
 
 // Populate countries in the list
-countries.forEach(country => {
-    countriesMarkup += `<li onclick="updateName(this);">${country}</li>`;
-});
-options.innerHTML = countriesMarkup;
+const populateCountries = (arr) => {
+    let countriesMarkup = "";
+    arr.forEach(country => {
+        countriesMarkup += `<li onclick="updateName(this);">${country}</li>`;
+    });
+    if(countriesMarkup == "") {
+        countriesMarkup = "<p>Oops! Country not found</p>"
+    }
+    options.innerHTML = countriesMarkup;
+};
 
+populateCountries(countries);
