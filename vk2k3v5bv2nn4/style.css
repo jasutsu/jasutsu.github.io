@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .card-list .card-item {
@@ -59,6 +60,27 @@ body {
     font-weight: 500;
     margin: 16px 0 18px;
 }
+
+.card-list .card-link .badge.designer {
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge.marketer {
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.card-list .card-link .badge.gamer {
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+.card-list .card-link .badge.editor {
+    color: #856404;
+    background: #fff3cd;
+}
+
 
 .card-list .card-link .card-title {
     color: var(--black-color);
