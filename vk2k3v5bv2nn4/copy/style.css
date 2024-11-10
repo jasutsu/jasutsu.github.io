@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid black; */
+}
+:root {
+    --blue-color: #4285f4;
+    --white-color: #fff;
+    --gray-color: #b3b3b3;
+    --light-gray-color: #f2f2f2;
+    --scroll-track-color: #f1f1f1;
+    --scroll-thumb-color: #ccc;
+}
+
+body {
+    background: var(--blue-color);
+}
+.wrapper {
+    width: 380px;
+    margin: 130px auto 0;
+}
+
+.select-btn {
+    background: var(--white-color);
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 65px;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.select-btn i {
+    font-size: 28px;
+    transition: transform 0.2s linear;
+}
+.wrapper.active .select-btn i {
+    transform: rotate(-180deg);
+}
+.content {
+    background: var(--white-color);
+    border-radius: 7px;
+    padding: 20px;
+    margin-top: 15px;
+    display: none;
+}
+.wrapper.active .content {
+    display: block;
+}
+.content .search {
+    position: relative;
+}
+.search i {
+    position: absolute;
+    left: 15px;
+    font-size: 18px;
+    line-height: 53px;
+    color: var(--gray-color);
+}
+.search input {
+    height: 53px;
+    font-size: 19px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 15px 0 45px;
+    border: 1px solid var(--gray-color);
+    outline: none;
+}
+.search input:focus {
+    border-color: var(--blue-color);
+}
+.content .options {
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+.options::-webkit-scrollbar-track {
+    background: var(--scroll-track-color);
+    border-radius: 20px;
+}
+.options::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-color);
+    border-radius: 20px;
+}
+.options {
+    list-style-type: none;
+}
+.options li {
+    margin-bottom: 0px;
+    padding: 10px 15px 10px 25px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.options li:hover, li.selected {
+    background: var(--light-gray-color);
+}
