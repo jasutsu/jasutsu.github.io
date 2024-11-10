@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 :root {
     --blue-color: #4285f4;
@@ -13,6 +13,8 @@
     --scroll-track-color: #f1f1f1;
     --scroll-thumb-color: #ccc;
 }
+
+
 
 body {
     background: var(--blue-color);
@@ -34,6 +36,40 @@ body {
     font-size: 22px;
     cursor: pointer;
 }
+
+
+
+
 .content {
     margin-top: 15px;
+    background: var(--white-color);
+    border-radius: 7px;
+    padding: 20px 25px;
+}
+.content .search {
+    position: relative;
+    font-size: 20px;
+}
+.search i {
+    position: absolute;
+    line-height: 53px;
+    left: 15px;
+    color: var(--gray-color);
+    font-size: 18px;
+}
+.search input {
+    height: 53px;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--gray-color);
+}
+.search input::placeholder {
+    color: var(--gray-color);
+}
+.search input:focus {
+    border: 1px solid var(--blue-color);
 }
