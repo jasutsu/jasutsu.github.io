@@ -2,72 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag and Drop List item</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <!-- Google Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Learn Tailwind</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 </head>
 
 <body>
-    <ul class="sortable-list">
+	<div class="container mx-auto">
+		<header class="flex justify-between items-center sticky top-0 z-10 py-4 bg-blue-900">
+			<div class="flex-shrink-0 ml-6 cursor-pointer">
+				<i class="fas fa-wind fa-2x text-yellow-500"></i>
+				<span class="text-3xl font-semibold text-blue-200">Tailwind School</span>
+			</div>
+			<ul class="flex overflow-x-hidden mr-10 font-semibold">
+				<li class="mr-6 p-1 border-b-2 border-yellow-500">
+					<a class="cursor-default text-blue-200" href="#">Home</a>
+				</li>
+				<li class="mr-6 p-1">
+					<a class="text-white hover:text-blue-300" href="#">News</a>
+				</li>
+				<li class="mr-6 p-1">
+					<a class="text-white hover:text-blue-300" href="#">Tutorials</a>
+				</li>
+				<li class="mr-6 p-1">
+					<a class="text-white hover:text-blue-300" href="#">Videos</a>
+				</li>
+			</ul>
+		</header>
+		<div>
+			<main>
+				<article>
+					<a href="#">
+						<img src="./laptop.jpeg">
+					</a>
+					<div>
+						<a href="#">Layout</a>
+						<a href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+						<p>By <a href="#">David Jacobs</a>, May 25, 2021</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
+							iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere
+							magna..</p>
+						<a href="#">Continue Reading <i></i></a>
+					</div>
+				</article>
 
-        <li class="item" draggable="true">
-            <div class="details">
-                <img src="images/img-1.jpg" alt="Image Caption">
-                <span>Kristina Zasiadko</span>
-            </div>
-            <i class="fa-solid fa-ellipsis-v"></i>
-        </li>
+				<article>
+					<a href="#">
+						<img src="./book.jpeg">
+					</a>
+					<div>
+						<a href="#">Imagery</a>
+						<a href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+						<p>By <a href="#">Monica Sanchez</a>, May 10, 2021</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
+							iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere
+							magna..</p>
+						<a href="#">Continue Reading <i></i></a>
+					</div>
+				</article>
 
-        <li class="item" draggable="true">
-            <div class="details">
-                <img src="images/img-2.jpg" alt="Image Caption">
-                <span>Rowen Atkinson</span>
-            </div>
-            <i class="fa-solid fa-ellipsis-v"></i>
-        </li>
+				<article>
+					<a href="#">
+						<img src="./code.jpeg">
+					</a>
+					<div>
+						<a href="#">Typography</a>
+						<a href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+						<p>By <a href="#">David Jacobs</a>, April 20, 2021</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
+							iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere
+							magna..</p>
+						<a href="#">Continue Reading <i></i></a>
+					</div>
+				</article>
+			</main>
+			<aside>
+				<section>
+					<form>
+						<input type="text" placeholder="Search...">
+						<button><i></i></button>
+					</form>
+				</section>
 
-        <li class="item" draggable="true">
-            <div class="details">
-                <img src="images/img-3.jpg" alt="Image Caption">
-                <span>Aleya Markov</span>
-            </div>
-            <i class="fa-solid fa-ellipsis-v"></i>
-        </li>
+				<section>
+					<div>
+						<h3>Get the latest news & tutorials right to your inbox</h3>
+						<form>
+							<input type="email" placeholder="youremail@example.com">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</section>
 
-        <li class="item" draggable="true">
-            <div class="details">
-                <img src="images/img-4.jpg" alt="Image Caption">
-                <span>James Hudson</span>
-            </div>
-            <i class="fa-solid fa-ellipsis-v"></i>
-        </li>
+				<section>
+					<h3>Categories</h3>
+					<ul>
+						<li>
+							<a href="#">Layout (23)</a>
+						</li>
+						<li>
+							<a href="#">Typography (44)</a>
+						</li>
+						<li>
+							<a href="#">Colors (16)</a>
+						</li>
+						<li>
+							<a href="#">Imagery (19)</a>
+						</li>
+					</ul>
+				</section>
+			</aside>
+		</div>
+		<section>
+			<div>
+				<h2>Want to stay up-to-date?</h2>
+				<h3>Join our mail list for hot news & new tutorials</h3>
+			</div>
+			<div>
+				<form>
+					<input placeholder="your@mail.com" />
+					<button>Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div>
 
-        <li class="item" draggable="true">
-            <div class="details">
-                <img src="images/img-5.jpg" alt="Image Caption">
-                <span>Maria Fererra</span>
-            </div>
-            <i class="fa-solid fa-ellipsis-v"></i>
-        </li>
+				<div>
+					<div>ABOUT US</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac est massa. Donec eget
+						elementum sapien, tincidunt tempor nunc. Cras sodales id ipsum at convallis.</p>
+				</div>
 
-        <li class="item" draggable="true">
-            <div class="details">
-                <img src="images/img-6.jpg" alt="Image Caption">
-                <span>William Potter</span>
-            </div>
-            <i class="fa-solid fa-ellipsis-v"></i>
-        </li>
-    </ul>
+				<div>
+					<div>CONTACT US</div>
+					<p>
+						A108 Adam Street <br>
+						New York, NY 535022 <br>
+						United States <br>
+						<strong>Phone:</strong> +1 5589 55488 55 <br>
+						<strong>Email:</strong> info@webcraft.com
+					</p>
+					<div>
+						<button>
+							<i></i>
+						</button>
+						<button>
+							<i></i>
+						</button>
+						<button>
+							<i></i>
+						</button>
+					</div>
+				</div>
+
+				<div>
+					<div>SAY HELLO!</div>
+					<form>
+						<input type="email" placeholder="Your email">
+						<textarea placeholder="Your message"></textarea>
+						<button type="button">SEND</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 
 </html>
