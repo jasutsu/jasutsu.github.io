@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com"></script>
 	<title>Learn Tailwind</title>
+	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 </head>
 
@@ -21,7 +21,7 @@
 					<a class="cursor-default text-blue-200" href="#">Home</a>
 				</li>
 				<li class="mr-6 p-1">
-					<a class="text-white hover:text-blue-300" href="#">News</a>
+					<a class="text-white hover:text-blue-300" href="#">News</a>	
 				</li>
 				<li class="mr-6 p-1">
 					<a class="text-white hover:text-blue-300" href="#">Tutorials</a>
@@ -31,50 +31,50 @@
 				</li>
 			</ul>
 		</header>
-		<div>
-			<main>
-				<article>
+		<div class="flex pb-4 bg-blue-100">
+			<main class="flex flex-col w-2/3 pl-6 pr-4 pt-4">
+				<article class="my-4 shadow">
 					<a href="#">
-						<img src="./laptop.jpeg">
+						<img class="w-full max-h-80 object-cover hover:opacity-75" src="images/image-169.jpg">
 					</a>
-					<div>
-						<a href="#">Layout</a>
-						<a href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
-						<p>By <a href="#">David Jacobs</a>, May 25, 2021</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
+					<div class="flex flex-col p-6 pt-2 bg-white">
+						<a class="my-2 text-sm font-bold uppercase border-b-2 border-yellow-500 text-blue-600" href="#">Layout</a>
+						<a class="pb-4 text-3xl font-serif font-bold hover:text-gray-700" href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+						<p class="pb-3 text-sm">By <a class="font-semibold hover:text-gray-800" href="#">David Jacobs</a>, May 25, 2021</p>
+						<p class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
 							iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere
 							magna..</p>
-						<a href="#">Continue Reading <i></i></a>
+						<a class="uppercase text-xs text-blue-600 hover:text-yellow-500" href="#">Continue Reading <i class="fas fa-arrow-right"></i></a>
 					</div>
 				</article>
 
-				<article>
+				<article class="my-4 shadow">
 					<a href="#">
-						<img src="./book.jpeg">
+						<img class="w-full max-h-80 object-cover hover:opacity-75" src="images/image-30.jpg">
 					</a>
-					<div>
-						<a href="#">Imagery</a>
-						<a href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
-						<p>By <a href="#">Monica Sanchez</a>, May 10, 2021</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
+					<div class="flex flex-col p-6 pt-2 bg-white">
+						<a class="my-2 text-sm font-bold uppercase border-b-2 border-yellow-500 text-blue-600" href="#">Imagery</a>
+						<a class="pb-4 text-3xl font-serif font-bold hover:text-gray-700" href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+						<p class="pb-3 text-sm">By <a class="font-semibold hover:text-gray-800" href="#">Monica Sanchez</a>, May 10, 2021</p>
+						<p class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
 							iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere
 							magna..</p>
-						<a href="#">Continue Reading <i></i></a>
+						<a class="uppercase text-xs text-blue-600 hover:text-yellow-500" href="#">Continue Reading <i class="fas fa-arrow-right"></i></a>
 					</div>
 				</article>
 
-				<article>
+				<article class="my-4 shadow">
 					<a href="#">
-						<img src="./code.jpeg">
+						<img class="w-full max-h-80 object-cover hover:opacity-75" src="images/image-690.jpg">
 					</a>
-					<div>
-						<a href="#">Typography</a>
-						<a href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
-						<p>By <a href="#">David Jacobs</a>, April 20, 2021</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
+					<div class="flex flex-col p-6 pt-2 bg-white">
+						<a class="my-2 text-sm font-bold uppercase border-b-2 border-yellow-500 text-blue-600" href="#">Typography</a>
+						<a class="pb-4 text-3xl font-serif font-bold hover:text-gray-700" href="#">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+						<p class="pb-3 text-sm">By <a class="font-semibold hover:text-gray-800" href="#">David Jacobs</a>, April 20, 2021</p>
+						<p class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu
 							iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere
 							magna..</p>
-						<a href="#">Continue Reading <i></i></a>
+						<a class="uppercase text-xs text-blue-600 hover:text-yellow-500" href="#">Continue Reading <i class="fas fa-arrow-right"></i></a>
 					</div>
 				</article>
 			</main>
