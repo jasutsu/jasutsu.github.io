@@ -1,0 +1,17 @@
+{
+  "name": "jasutsu.github.io",
+  "version": "1.0.0",
+  "description": "1. Tailwind projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx.cmd tailwindcss -i styles.css -o tailwind.css",
+    "dev:watch": "npx.cmd tailwindcss -i styles.css -o tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
