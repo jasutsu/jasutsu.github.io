@@ -10,11 +10,11 @@
 
 <body class="font-satoshi bg-gray-800 grid min-h-screen place-items-center">
 
-    <div class="w-[720px] h-[360px] bg-white flex flex-col justify-end">
+    <div class="relative w-[720px] h-[360px] bg-white flex flex-col justify-end overflow-hidden">
         <!-- Content -->
         <div class="p-8 flex flex-col gap-2">
-            <div class="text-purple-600 uppercase text-sm font-medium tracking-wide" >What's new in Tailwind css</div>
-            <h1 class="font-extrabold text-4xl ">What's New in<br>Tailwind CSS v2.2</h1>
+            <div class="text-purple-600 uppercase text-sm font-semibold tracking-wider">What's new in Tailwind css</div>
+            <h1 class="font-extrabold text-5xl">What's New in<br>Tailwind CSS v2.2</h1>
             <div>
                 <svg viewBox="0 0 248 31" class="text-slate-900 w-auto h-5">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -27,9 +27,29 @@
             </div>
         </div>
         <!-- Left Top circle -->
+        <div class="absolute -top-12 -left-10 w-[200px] h-[200px] bg-purple-200 rounded-full grid place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-28 text-white mb-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+        </div>
         <!-- Right circle -->
+        <div class="absolute w-[600px] h-[600px] bg-purple-200 rounded-full -top-28 -right-80"></div>
         <!-- Images -->
+        <div class="absolute top-8 right-8">
+            <img class="w-64 h-36 object-cover rounded-lg rotate-3" src="images/image-1.jpg" alt="Image caption">
+            <img class="w-64 h-36 object-cover rounded-lg -rotate-3 translate-x-10" src="images/image-2.png"
+                alt="Image caption">
+        </div>
         <!-- Play button -->
+        <div class="absolute w-12 h-12 right-10 bg-purple-500 hover:bg-purple-400 cursor-pointer rounded-full ring-4 ring-white grid place-items-center inset-y-0 self-center transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-8 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+        </div>
     </div>
 
 </body>
