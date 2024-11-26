@@ -17,3 +17,6 @@
 Project Websites:
 https://www.youtube.com/@geekprobin1456/videos
 https://www.youtube.com/@Tailwindcollections/videos
+https://youtube.com/playlist?list=PLSDeUiTMfxW7lm7P7GZ8qtNFffHAR5d_w
+https://github.com/bradtraversy/vanillawebprojects?tab=readme-ov-file
+https://www.florin-pop.com/blog/100-days-100-projects/
