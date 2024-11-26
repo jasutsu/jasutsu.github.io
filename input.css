@@ -20,7 +20,6 @@
         font-display: swap;
         font-style: normal;
     }
-<<<<<<< HEAD
 }
 
 @layer utilities {
@@ -31,6 +30,4 @@
 
 .blue-box {
     @apply p-2 bg-blue-500 text-gray-200 text-lg font-extrabold;
-=======
->>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 }
