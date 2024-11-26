@@ -18,14 +18,29 @@
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
             </svg>
-
-
         </div>
         <!-- Right big circle -->
+        <div aria-hidden="true" class="absolute w-[512px] h-[512px] bg-purple-200 rounded-full -top-20 -right-56"></div>
         <!-- Images -->
+        <div class="absolute top-8 right-8">
+            <img class="w-64 h-36 object-cover rounded-2xl shadow-2xl rotate-3" src="images/image-1.jpg"
+                alt="Image Caption">
+            <img class="w-64 h-36 object-cover rounded-2xl shadow-2xl -rotate-3 translate-x-16" src="images/image-2.png"
+                alt="Image Caption">
+        </div>
         <!-- Play button -->
+        <div class="absolute right-12 grid inset-y-0 items-center">
+            <a href="#" class="w-12 h-12 bg-purple-500 hover:bg-purple-400 transition rounded-full ring-4 ring-white grid place-items-center">
+                <span class="sr-only">Watch the video</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8 ml-1 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                </svg>
+            </a>
+        </div>
         <!-- Content -->
-        <div class="flex flex-col justify-end h-full w-2/3 p-8 space-y-4">
+        <div class="relative flex flex-col justify-end h-full w-2/3 p-8 space-y-4">
             <p class="text-md font-semibold text-purple-600 uppercase tracking-wider">How we'd build it</p>
             <h1 class="text-4xl font-extrabold ">YouTube Thumbnail<br>with Tailwind CSS</h1>
             <svg viewBox="0 0 248 31" class="text-slate-900 w-36">
