@@ -124,7 +124,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -573,13 +573,110 @@ video {
 
   src: url('./fonts/Inter.ttf') format('truetype');
 
-  /* font-weight: 300 900; */
+  font-weight: 300 900;
 
   font-display: swap;
 
   font-style: normal;
 }
 
-.font-inter {
-  font-family: Inter-Variable, sans-serif;
+.grid {
+  display: grid;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.font-satoshi {
+  font-family: Satoshi-Variable, sans-serif;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+.blue-box {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 540px) {
+  .xs\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xs\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .xs\:grid {
+    display: grid;
+  }
+
+  .xs\:h-auto {
+    height: auto;
+  }
+
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xs\:gap-4 {
+    gap: 1rem;
+  }
+
+  .xs\:self-center {
+    align-self: center;
+  }
+
+  .xs\:square {
+    aspect-ratio: 2 / 1;
+  }
 }
