@@ -584,13 +584,6 @@ video {
   display: grid;
 }
 
-<<<<<<< HEAD
-=======
-.h-16 {
-  height: 4rem;
-}
-
->>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 .min-h-screen {
   min-height: 100vh;
 }
@@ -607,33 +600,19 @@ video {
   gap: 1rem;
 }
 
-.bg-blue-500 {
+.self-center {
+  align-self: center;
+}
+
+.bg-yellow-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
 }
 
-<<<<<<< HEAD
-.p-2 {
-  padding: 0.5rem;
-}
-
-=======
->>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 .p-4 {
   padding: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
->>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 .font-satoshi {
   font-family: Satoshi-Variable, sans-serif;
 }
@@ -643,19 +622,8 @@ video {
   line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-extrabold {
   font-weight: 800;
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
-<<<<<<< HEAD
 }
 
 .blue-box {
@@ -676,6 +644,10 @@ video {
 
   .xs\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .xs\:row-start-2 {
+    grid-row-start: 2;
   }
 
   .xs\:grid {
@@ -699,8 +671,60 @@ video {
   }
 
   .xs\:square {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1 / 1;
   }
-=======
->>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }

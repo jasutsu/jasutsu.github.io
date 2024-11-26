@@ -21,13 +21,3 @@
         font-style: normal;
     }
 }
-
-@layer utilities {
-    .square {
-        aspect-ratio: 2 / 1;
-    }
-}
-
-.blue-box {
-    @apply p-2 bg-blue-500 text-gray-200 text-lg font-extrabold;
-}
