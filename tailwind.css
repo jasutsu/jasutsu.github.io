@@ -584,6 +584,13 @@ video {
   display: grid;
 }
 
+<<<<<<< HEAD
+=======
+.h-16 {
+  height: 4rem;
+}
+
+>>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 .min-h-screen {
   min-height: 100vh;
 }
@@ -605,14 +612,28 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
+<<<<<<< HEAD
 .p-2 {
   padding: 0.5rem;
 }
 
+=======
+>>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 .p-4 {
   padding: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+>>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 .font-satoshi {
   font-family: Satoshi-Variable, sans-serif;
 }
@@ -634,6 +655,7 @@ video {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+<<<<<<< HEAD
 }
 
 .blue-box {
@@ -679,4 +701,6 @@ video {
   .xs\:square {
     aspect-ratio: 2 / 1;
   }
+=======
+>>>>>>> 4e001dc6d2ed7f7c2ad74cc00d098436adc21a48
 }
