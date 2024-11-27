@@ -51,39 +51,78 @@
                     <p class="mt-3 text-6xl font-extralight">9:41</p>
                     <p class="mt-1 text-lg font-normal">Monday, June 21</p>
                 </div>
-                <div class="mx-2 mt-4 bg-white/40 backdrop-blur-sm rounded-3xl p-4">
-                    <div class="flex justify-between">
-                        <div>
-                            <p class="text-xs font-bold">9:40 AM</p>
-                            <h2 class="text-lg font-bold">You Morning Summary</h2>
-                        </div>
-                        <div class="h-8 w-8 bg-gray-500 rounded-full text-white grid place-items-center">11</div>
+                <div class="mx-2 mt-4 relative">
+                    <div
+                        class="absolute -bottom-4 inset-x-0 bg-white/10 backdrop-blur-sm rounded-2xl h-full scale-[0.85] origin-bottom">
                     </div>
-                    <div class="mt-2 grid grid-cols-2 gap-2">
-                        <div>
-                            <img class="h-20 w-full object-cover rounded-lg" src="images/image-celebration.jpg" alt="caption">
-                            <h3 class="mt-2 font-semibold text-sm leading-tight">Sparks your joy, drains your energy.</h3>
-                            <p class="mt-1 text-sm">It's all cheers and laughter until the music stops.</p>
-                        </div>
-                        <div>
-                            <img class="h-20 w-full object-cover rounded-lg" src="images/image-peace.jpg" alt="caption">
-                            <h3 class="mt-2 font-semibold text-sm leading-tight">Calms your mind, tests your focus.</h3>
-                            <p class="mt-1 text-sm">It's all peace until distractions strike.</p>
-                        </div>
+                    <div
+                        class="absolute -bottom-2 inset-x-0 bg-white/30 backdrop-blur-sm rounded-3xl h-full scale-95 origin-bottom shadow-sm">
                     </div>
-                    <hr class="mt-4 border-black/20">
-                    <div class="mt-4 grid grid-cols-3 gap-1">
-                        <div class="col-span-2">
-                            <h3 class="font-semibold text-sm">More Updates</h3>
-                            <p class="mt-0.5 text-sm">YouTube, New York Times, Reddit and Upstox</p>
+                    <div class="bg-white/40 backdrop-blur-sm rounded-3xl p-4 shadow">
+                        <div class="flex justify-between">
+                            <div>
+                                <p class="text-xs font-bold">9:40 AM</p>
+                                <h2 class="text-lg font-bold">You Morning Summary</h2>
+                            </div>
+                            <div class="h-8 w-8 bg-gray-500 rounded-full text-white grid place-items-center">11</div>
                         </div>
-                        <ul class="flex flex-row-reverse space-x-reverse -space-x-4">
-                            <li><img class="w-8 h-9 rounded-xl object-cover" src="images/icon-youtube.png" alt=""></li>
-                            <li><img class=" w-8 h-9 rounded-xl object-cover" src="images/icon-newyorktimes.jpg" alt=""></li>
-                            <li><img class="w-8 h-9 rounded-xl object-cover" src="images/icon-reddit.png" alt=""></li>
-                        </ul>
+                        <div class="mt-2 grid grid-cols-2 gap-2">
+                            <div>
+                                <img class="h-20 w-full object-cover rounded-lg" src="images/image-celebration.jpg"
+                                    alt="caption">
+                                <h3 class="mt-2 font-semibold text-sm leading-tight">Sparks your joy, drains your
+                                    energy.</h3>
+                                <p class="mt-1 text-sm">It's all cheers and laughter until the music stops.</p>
+                            </div>
+                            <div>
+                                <img class="h-20 w-full object-cover rounded-lg" src="images/image-peace.jpg"
+                                    alt="caption">
+                                <h3 class="mt-2 font-semibold text-sm leading-tight">Calms your mind, tests your focus.
+                                </h3>
+                                <p class="mt-1 text-sm">It's all peace until distractions strike.</p>
+                            </div>
+                        </div>
+                        <hr class="mt-4 border-black/20">
+                        <div class="mt-4 grid grid-cols-3 gap-1">
+                            <div class="col-span-2">
+                                <h3 class="font-semibold text-sm">More Updates</h3>
+                                <p class="mt-0.5 text-sm">YouTube, New York Times, Reddit and Upstox</p>
+                            </div>
+                            <ul class="flex flex-row-reverse space-x-reverse -space-x-4">
+                                <li><img class="w-8 h-9 rounded-xl object-cover" src="images/icon-youtube.png" alt="">
+                                </li>
+                                <li><img class=" w-8 h-9 rounded-xl object-cover" src="images/icon-newyorktimes.jpg"
+                                        alt=""></li>
+                                <li><img class="w-8 h-9 rounded-xl object-cover" src="images/icon-reddit.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 h-20">
+                <div class="flex justify-between px-10">
+                    <button class="bg-gray-800/40 rounded-full p-3 backdrop-blur-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                            <path
+                                d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+                            <path fill-rule="evenodd"
+                                d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </button>
+                    <button class="bg-gray-800/40 rounded-full p-3 backdrop-blur-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+                            <path d="M12 9a3.75 3.75 0 1 0 0 7.5A3.75 3.75 0 0 0 12 9Z" />
+                            <path fill-rule="evenodd" d="M9.344 3.071a49.52 49.52 0 0 1 5.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 0 0 1.11-.71l.822-1.315a2.942 2.942 0 0 1 2.332-1.39ZM6.75 12.75a5.25 5.25 0 1 1 10.5 0 5.25 5.25 0 0 1-10.5 0Zm12-1.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                          </svg>
+                          
+                    </button>
+                </div>
+            </div>
+            <div class="absolute bottom-1 inset-x-0">
+                <div class="mx-auto w-28 h-1 bg-white rounded"></div>
             </div>
         </div>
 
