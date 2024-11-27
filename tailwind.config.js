@@ -10,6 +10,7 @@ module.exports = {
 		fontFamily: {
 			satoshi: 'Satoshi-Variable, sans-serif',
 			inter: 'Inter-Variable, sans-serif',
+			sfpro: 'SF-Pro-Rounded, sans-serif',
 		},
 		extend: {
 		},
