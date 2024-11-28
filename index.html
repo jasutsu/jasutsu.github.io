@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -142,9 +142,19 @@
             <h2 class="text-4xl font-bold sm:text-5xl text-center sm:text-left text-slate-900 dark:text-white">
                 Contact Us
             </h2>
-            
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
+                <label for="subject">Subject:</label>
+                <input class="w-full p-3 rounded-xl text-black text-2xl sm:text-3xl border border-solid border-slate-900 dark:border-none" type="text" id="subject" name="subject" placeholder="Your Subject">
+                <label for="message">Message:</label>
+                <textarea class="w-full p-3 rounded-xl text-black text-2xl sm:text-3xl border border-solid border-slate-900 dark:border-none" id="message" name="message" placeholder="Your Message"></textarea>
+                <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-300 p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none text-white" type="submit">Submit</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
