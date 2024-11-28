@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acme Rockets</title>
     <link rel="stylesheet" href="./tailwind.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body class="font-satoshi min-h-screen bg-slate-50 dark:bg-black dark:text-white">
 
     <header class="bg-teal-700 text-white sticky top-0 z-10">
+
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">
-                <a href="#home">🚀 Acme Rockets</a>
+                <a href="#hero">🚀 Acme Rockets</a>
             </h1>
             <div>
                 <button id="burger-button" class="text-3xl focus:outline-none sm:hidden">&#9776;</button>
@@ -24,8 +26,18 @@
                 </nav>
             </div>
         </section>
-        <section>
-            <!-- Mobile Menu -->
+
+        <section id="mobile-menu" class="absolute top-0 bg-black/70 backdrop-blur w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8">
+                <a href="#hero" class="hover:opacity-90 w-full text-center py-6">Hero</a>
+                <a href="#rockets" class="hover:opacity-90 w-full text-center py-6">Our Rockets</a>
+                <a href="#testimonials" class="hover:opacity-90 w-full text-center py-6">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90 w-full text-center py-6">Contact Us</a>
+                <a href="#footer" class="hover:opacity-90 w-full text-center py-6">Legal</a>
+            </nav>
         </section>
     </header>
 
@@ -94,7 +106,7 @@
                 Testimonials
             </h2>
             <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-12 py-12 rounded-3xl relative">
                     <p
                         class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:absolute after:right-4 after:-bottom-6 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2">
                         Acme
@@ -109,7 +121,7 @@
                 </figcaption>
             </figure>
             <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-12 py-12 rounded-3xl relative">
                     <p
                         class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:absolute after:right-4 after:-bottom-6 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2">
                         I rely on Acme for all my problem-solving needs. Their Instant Hole kit is a game-changer for
@@ -121,7 +133,7 @@
                 </figcaption>
             </figure>
             <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-12 py-12 rounded-3xl relative">
                     <p
                         class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:absolute after:right-4 after:-bottom-6 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2">
                         Acme's Anvil Deluxe was delivered right on time and exceeded all my expectations. Precision
@@ -133,7 +145,7 @@
                 </figcaption>
             </figure>
             <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-12 py-12 rounded-3xl relative">
                     <p
                         class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:absolute after:right-4 after:-bottom-6 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2">
                         Acme's Catapult Pro is unmatched in quality and performance. It has never let me down in
