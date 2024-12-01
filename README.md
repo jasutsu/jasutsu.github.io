@@ -20,3 +20,6 @@ https://www.youtube.com/@Tailwindcollections/videos
 https://youtube.com/playlist?list=PLSDeUiTMfxW7lm7P7GZ8qtNFffHAR5d_w
 https://github.com/bradtraversy/vanillawebprojects?tab=readme-ov-file
 https://www.florin-pop.com/blog/100-days-100-projects/
+
+Free APIs Online:
+let superHeroAPI = `https://www.superheroapi.com/api.php/727054372039115/search/${searchText}`;
