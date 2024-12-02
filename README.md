@@ -1,4 +1,4 @@
-1. Tailwind projects
+1. [DONE] Tailwind projects
 
 2. small heavy all kinds of JS projects
 
