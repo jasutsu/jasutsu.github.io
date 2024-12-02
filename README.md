@@ -23,3 +23,4 @@ https://www.florin-pop.com/blog/100-days-100-projects/
 
 Free APIs Online:
 let superHeroAPI = `https://www.superheroapi.com/api.php/727054372039115/search/${searchText}`;
+let randomQuote = "https://api.quotable.io/random";
