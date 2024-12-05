@@ -1,6 +1,6 @@
 1. [DONE] Tailwind projects
 
-2. small heavy all kinds of JS projects
+2. [DONE] small heavy all kinds of JS projects
 
 3. few TS projects
 
