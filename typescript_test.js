@@ -1,3 +1,6 @@
 "use strict";
-let num = 1;
-let b = 12;
+function getValue() {
+    return 'hero';
+}
+let out = getValue() || 'default';
+console.log(out);

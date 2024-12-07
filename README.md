@@ -4,15 +4,28 @@
 
 3. few TS projects
 
-4. Google Keep - DSA New Order
+4.  To keep things interesting, perform DEV and DSA one after
+    the other:
+    i. DEV: Breakpoint
+                  - caused by React topic/lesson in educative.io
+                    or React Project's feature
+                    or DRF topic/lesson/project's feature
+                    or anything DEV in future
+    ii. DSA: After Every Breakpoint
+                  - solve 5 to 7 questions of topics mentioned in DSA
+                    or SD topic/lesson
+                    or LLD topic/lesson
+                    or Design Systems topic/lesson
 
-5. Good amount of projects with Django
+#define DSA =
+Google Keep - DSA New Order
 
-6. A lot of React.js projects
+#define DEV =
+i.      A lot of React.js projects (learn to use vite: with react, ts, tailwindcss)
+ii.     Material-UI with React.js projects
+iii.    Tonnes of DRF projects
+iv.     few FastAPI projects
 
-7. Material-UI with React.js projects
-
-8. Tonnes of DRF projects
 
 Project Websites:
 https://www.youtube.com/@geekprobin1456/videos
