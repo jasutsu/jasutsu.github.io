@@ -2,11 +2,11 @@
 
 2. [DONE] small heavy all kinds of JS projects
 
-3. few TS projects
+3. [NO GOOD PROJECTS, JUST BUILD REACT PROJECTS IN TS] few TS projects
 
 4.  To keep things interesting, perform DEV and DSA one after
     the other:
-    i. DEV: Breakpoint
+    i.  DEV: Breakpoint
                   - caused by React topic/lesson in educative.io
                     or React Project's feature
                     or DRF topic/lesson/project's feature
