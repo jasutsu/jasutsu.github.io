@@ -22,7 +22,8 @@ Google Keep - DSA New Order
 
 #define DEV =
 i.      A lot of React.js projects (learn to use vite: with react, ts, tailwindcss)
-ii.     Material-UI with React.js projects
+ii.     Master one of the UI component library, for prototype reason, with React.js projects
+			(Material-UI or ShadCn UI (react based))
 iii.    Tonnes of DRF projects
 iv.     few FastAPI projects
 
