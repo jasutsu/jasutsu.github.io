@@ -1,6 +1,21 @@
 "use strict";
-function getValue() {
-    return 'hero';
+let completeData = {
+    name: "joe",
+    id: 1,
+    loggedIn: true,
+    email: "joe@brandon.com",
+    currentBalance: 89
+};
+let partialData = {
+    currentBalance: 100,
+    name: 'john doe'
+};
+function updateData(originalData, someData) {
+    for (const key in someData) {
+        if (someData[key] !== undefined) {
+            originalData[key] = someData[key];
+        }
+    }
+    return originalData;
 }
-let out = getValue() || 'default';
-console.log(out);
+console.log(updateData(completeData, partialData));

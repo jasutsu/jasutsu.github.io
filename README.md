@@ -21,11 +21,13 @@
 Google Keep - DSA New Order
 
 #define DEV =
-i.      A lot of React.js projects (learn to use vite: with react, ts, tailwindcss)
+i.      only some of React.js projects (learn to use vite: with react, ts, tailwindcss)
+i/2.	TypeScript - A Lot of React.ts projects
 ii.     ShadCn UI (react based), to build prototypes fast
 iii.    Tonnes of DRF projects
 iv.     few FastAPI projects
-
+v. 		react.dev 'Learn' 
+vi. 	react.dev 'API Reference'
 
 Project Websites:
 https://www.youtube.com/@geekprobin1456/videos
